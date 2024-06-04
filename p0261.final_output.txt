@@ -1,0 +1,585 @@
+{Q1:
+TNC Conservation Easements National Survey Qux
+Draft 6e	N=1000 Voters + 400 Regional OS
+New Bridge Strategy/FM3
+!FIELD
+1000 Voters + 400 Regional OS
+03 
+}
+
+{Q2:
+Thank you for participating in this survey. Your input is extremely valuable. Please know that your responses will be kept strictly confidential and no material that identifies your response will be distributed. This survey is NOT for marketing purposes. We are not attempting to sell anything, nor will your participation result in any e‐mails in the future to sell you anything.
+!UNKNOWN
+}
+
+{Q3:
+Before we begin, please answer just a few questions about yourself to be sure we have a representative sample.
+!UNKNOWN
+}
+
+{Q4:
+A.	In which state are you registered to vote? If you are not registered to vote, please click that instead.
+!UNKNOWN
+}
+
+{Q5:
+(TERMINATE IF NOT REGISTERED TO VOTE)
+	USE FIPS CODES
+!UNKNOWN
+}
+
+{Q6:
+52	Not registered to vote  (TERMINATE)
+!FIELD
+52 Not registered to vote  (TERMINATE)	
+}
+
+{Q7:
+(ASKED OF TX VOTERS ONLY)
+A1.	In which county are you registered to vote? (INCLUDE LIST WITH FIPS CODES, INCLUDING ONE FOR “NOT REGISTERED TO VOTE IN TEXAS” WHICH WILL TERMINATE)
+!UNKNOWN
+}
+
+{Q8:
+H1. 	We care about the quality of our data. In order for us to get the most accurate measures of your knowledge and opinions, it is important that you read all questions carefully and thoughtfully provide your best answers to each question in this survey. Do you commit to thoughtfully providing your best answers to each question in this survey?
+!UNKNOWN
+}
+
+{Q9:
+1 Yes
+2 No (thank and term)
+!FIELD
+01 Yes
+02 No (thank and term)
+}
+
+{Q10:
+D1.	In what year were you born?
+!UNKNOWN
+}
+
+{Q11:
+___ ___ ___ ___
+!UNKNOWN
+}
+
+{Q12:
+(MUST BE 18+, OTHERWISE TERMINATE)
+!UNKNOWN
+}
+
+{Q13:
+D2.	Please record your gender
+!UNKNOWN
+}
+
+{Q14:
+1	Male
+	2	Female
+	3	Something else
+!FIELD
+01 Male
+02 Female
+03 Something else
+}
+
+{Q15:
+D3.	How would you describe the area where you currently live?  (ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
+!UNKNOWN
+}
+
+{Q16:
+1	A city 
+2	A suburban area 
+3	A small town  
+4	A rural area
+!FIELD
+01 A city 
+02 A suburban area 
+03 A small town  
+04 A rural area 
+}
+
+{Q17:
+D4.	What is your ethnic or racial heritage?  (PHONE: READ CHOICES)
+!UNKNOWN
+}
+
+{Q18:
+African American or Black
+White
+Hispanic American or Latino
+Asian American or Pacific Islander  
+Middle Eastern
+Indigenous or Native American
+Other 
+Combination
+!UNKNOWN
+}
+
+{Q19:
+B.	For quality control, please select which item in this list does not belong. (RANDOMIZE)
+!UNKNOWN
+}
+
+{Q20:
+1	Red (THANK AND TERMINATE)
+	2	Green (THANK AND TERMINATE)
+	3	Purple (THANK AND TERMINATE)
+	4	Tuesday 
+	5	Yellow (THANK AND TERMINATE)
+!FIELD
+01 Red (THANK AND TERMINATE)
+02 Green (THANK AND TERMINATE)
+03 Purple (THANK AND TERMINATE)
+04 Tuesday 
+05 Yellow (THANK AND TERMINATE)
+}
+
+{Q21:
+Getting started…
+!UNKNOWN
+}
+
+{Q22:
+Generally speaking, do you feel your local community (ROTATE) is growing and developing too fast, is growing and developing too slowly, or is your community growing and developing at about the right pace?
+!UNKNOWN
+}
+
+{Q23:
+1	Too Fast
+	2	Too Slowly
+	3	About Right
+____________________________________________________________________________________
+!FIELD
+01 Too Fast
+02 Too Slowly
+03 About Right
+}
+
+{Q24:
+Which statement best represents how you feel about protecting land, water and wildlife habitat in your state: (ROTATE PUNCHES 1-3 TOP TO BOTTOM, BOTTOM TO TOP)
+!FIELD
+03 TOP TO BOTTOM, BOTTOM TO TOP)
+}
+
+{Q25:
+We need to protect a lot more 
+We have made progress, but some more needs to be done 
+We have done enough, and there is no need to protect more 
+____________________________________________________________________________________
+!UNKNOWN
+}
+
+{Q26:
+Thinking some more about land, water, and wildlife habitat in your state –
+!UNKNOWN
+}
+
+{Q27:
+One way to conserve working farms, ranches, water, and wildlife habitat is through voluntary conservation land agreements with willing, private landowners. In exchange for a payment or a tax incentive, landowners agree not to develop their land or to sell it for development so that the land remains as farms, wildlife habitat or natural areas. Landowners can continue to farm, ranch or use their land, and can sell the land or pass it on to their children or grandchildren.
+!UNKNOWN
+}
+
+{Q28:
+These agreements are sometimes referred to as conservation easements. Prior to this survey, have you seen, read or heard of a conservation easement before?
+!UNKNOWN
+}
+
+{Q29:
+Yes, a lot
+Yes, a little 
+No, not heard of
+!UNKNOWN
+}
+
+{Q30:
+And do you support or oppose continuing to allow private landowners the ability to conserve their lands as working farms, ranches, natural areas and wildlife habitat in your state through these voluntary land conservation agreements?
+!UNKNOWN
+}
+
+{Q31:
+Strongly Support
+Somewhat Support
+Somewhat Oppose
+Strongly Oppose
+____________________________________________________________________________________
+!UNKNOWN
+}
+
+{Q32:
+Thinking some more about these agreements – The following are some things that people might say about this approach to conserving land in your state. Please indicate whether each description makes you much more likely, somewhat more likely, somewhat less likely, or much less likely to support.  (SHOW FIRST TWO IN ORDER, THEN RANDOMIZE REMAINDER)
+!UNKNOWN
+}
+
+{Q33:
+MUCH	SMWT	SMWT	MUCH
+MORE	MORE	LESS	LESS
+LIKELY	LIKELY	LIKELY	LIKELY
+1	2	3	4
+!FIELD
+01 2	3	4
+}
+
+{Q34:
+SAMPLE A: Is a voluntary agreement between a private landowner and state or local government or non-profit land trusts
+SAMPLE B: Is a voluntary agreement between a private landowner and state or local government 
+Limits certain types of uses or prevents development from taking place on the land to protect its value as a natural area, open space, farm or ranchland, now and in the future
+!UNKNOWN
+}
+
+{Q35:
+(ASK OF SAMPLE A)
+Keeps land in private hands and preserves traditional land uses, such as family farming and ranching 
+Prevents land from being used in a more profitable way, which limits tax revenue especially for rural communities  
+Provides little value to local residents, since public access is often not allowed on private lands.  
+Can end up creating unfair tax breaks benefiting wealthy large landowners 
+Permanently restricts all future owners from developing the land
+!UNKNOWN
+}
+
+{Q36:
+(ASK OF SAMPLE B)
+Makes it possible to keep farms and ranches in operation and protected from development 
+Hurts rural economies as it limits future development which could create jobs and generate more in taxes
+Generates revenue for the local community, because landowners continue to pay property taxes 
+Allows non-profit organizations and government to protect more land from development, because it is less expensive than buying the land outright 
+Can be limited to a certain period of time, such as ten to twenty years, where the land cannot be developed
+!UNKNOWN
+}
+
+{Q37:
+As noted earlier there’s a number of different ways to refer to this approach to conserving natural areas, wildlife habitat and working farms or ranches. From the following list of proposed names, please rate each name on an imaginary thermometer from zero degrees to one hundred degrees, where zero means you have a very cold/unfavorable reaction and 100 means you have a very warm/favorable reaction, with fifty being neither cold nor warm.  Remember, you can use any number between zero to one hundred depending on how cold or warm you feel about each different name. (RANDOMIZE)
+!FIELD
+100 means you have a very warm/favorable reaction, with fifty being neither cold nor warm.  Remember, you can use any number between zero to one hundred depending on how cold or warm you feel about each different name. (RANDOMIZE)
+}
+
+{Q38:
+Voluntary land conservation agreements
+Land protection agreements
+Conservation easements
+Transfer of development rights
+Voluntary private land conservation
+!UNKNOWN
+}
+
+{Q39:
+Some elected officials have raised concerns that these land conservation agreements can limit the economic and productive use of lands, which could hurt the economy and limit tax revenues for counties. Therefore, they have proposed a number of ways to limit landowners’ rights to enter into voluntary land conservation agreements. For each one of these, please indicate if that sounds like something you would support or oppose in your state. (RANDOMIZE)
+!UNKNOWN
+}
+
+{Q40:
+STRONGLY	SMWT		SMWT		STRONGLY
+SUPPORT	SUPPORT	OPPOSE	OPPOSE
+1		2		3		4
+!FIELD
+01 2		3		4
+}
+
+{Q41:
+ASK SAMPLE A: Ban landowners from agreeing to permanently conserve their land as a farm, ranch or wildlife habitat 
+ASK SAMPLE B: Only allow landowners to enter into agreements that conserve their land as a farm, ranch or wildlife habitat for a limited amount of time, such as twenty years, in order to allow it to potentially be developed in the future 
+Require that no county can have more than 10 percent of land that is conserved through a land conservation agreement
+Require that County Commissioners have to vote to approve all future land conservation agreements entered into by landowners in their county
+Require that landowners have to provide public access on any conserved land
+Reclassify the land so that landowners would have to pay significantly higher property taxes each year if they have a conservation agreement on their land
+!FIELD
+10 percent of land that is conserved through a land conservation agreement
+}
+
+{Q42:
+The following are some statements that people who support maintaining landowners’ ability to enter into voluntary land conservation agreements. For each one, please indicate if it is a very convincing, somewhat convincing, not very convincing, or not at all convincing reason to support maintaining land conservation agreements. (RANDOMIZE)
+!UNKNOWN
+}
+
+{Q43:
+VERY		SOMEWHAT	NOT VERY	NOT AT ALL
+CONV		CONV		CONV		CONV
+	2		3		4
+!FIELD
+02 3		4
+}
+
+{Q44:
+Developers take advantage of small farm and ranch families by buying up their land, forever changing the rural character of our communities. These voluntary land conservation agreements are a critical tool to defend our communities from these attacks.
+!UNKNOWN
+}
+
+{Q45:
+ASK SAMPLE A: Determining the future use of your land is one of the most fundamental private property rights. This is a cherished American value and we ought to allow landowners to use voluntary land conservation agreements as a way to keep their land as they would like for future generations.
+!UNKNOWN
+}
+
+{Q46:
+ASK SAMPLE B: Families should be able to decide how they will use their land now and for future generations through voluntary land conservation agreements, without being told what to do by the government.
+!UNKNOWN
+}
+
+{Q47:
+ASK SAMPLE A: According to the American Farmland Trust, the United States loses 2,000 acres of farmland every single day, mostly to encroaching cities and development. Continuing to allow American farmers and ranchers to enter into land conservation agreements will help ensure family farms are passed on to the next generation and stay in the family, will help ensure local food production, and will retain the character of many small-town communities.
+!FIELD
+00 acres of farmland every single day, mostly to encroaching cities and development. Continuing to allow American farmers and ranchers to enter into land conservation agreements will help ensure family farms are passed on to the next generation and stay in the family, will help ensure local food production, and will retain the character of many small-town communities.
+}
+
+{Q48:
+ASK SAMPLE B: The amount of farmland bought by Wall Street and foreign investment firms jumped 231 percent from 2008 to the middle of last year. In fact, a Chinese billionaire is the second-biggest foreign owner of US land now. Continuing to allow American farmers and ranchers to enter into land conservation agreements will help ensure family farms are passed on to the next generation and stay in the family, will help ensure local food production, and will retain the character of many small-town communities.
+!FIELD
+231 percent from 2008 to the middle of last year. In fact, a Chinese billionaire is the second-biggest foreign owner of US land now. Continuing to allow American farmers and ranchers to enter into land conservation agreements will help ensure family farms are passed on to the next generation and stay in the family, will help ensure local food production, and will retain the character of many small-town communities.
+}
+
+{Q49:
+Voluntary land conservation agreements are one of the most cost effective ways to help conserve natural areas, wildlife habitat and farms and ranches. By allowing landowners to continue to care for their land as they do now, we ensure a stable tax base and reduce the cost to taxpayers of new roads and infrastructure that often comes with new development.
+!UNKNOWN
+}
+
+{Q50:
+Land conservation agreements help protect vital wildlife habitat and migration routes that are increasingly threatened by growth and development. Having healthy, abundant wildlife not only contributes to our quality of life, but is often an economic engine for rural areas that rely on people coming to fish, hunt, or view wildlife.
+!UNKNOWN
+}
+
+{Q51:
+ASK SAMPLE A: One million acres of land every year are lost to development – that’s the size of Phoenix, Los Angeles and Houston combined that every year become subdivisions, highways, and strip malls. Conserving our natural areas, farmland, and forests is important to the character of our communities, our quality of life, and to the future of our state.
+!UNKNOWN
+}
+
+{Q52:
+Voluntary land conservation agreements have been used for one hundred years and have endured because landowners WANT to conserve their land. Studies suggest that the vast majority of funds go directly back into agricultural operations and expansion, providing family farms stability in down years, and ensuring lands are able to be passed on to the next generation.
+!UNKNOWN
+}
+
+{Q53:
+Land conservation agreements are primarily used to conserve land as wildlife habitat, ranches or farms, but they can have other benefits. For example, the military has supported these voluntary agreements near its bases in some states to ensure houses are not built nearby which avoids conflicts and ensures they can train using all necessary equipment.
+!UNKNOWN
+}
+
+{Q54:
+Land conservation agreements provide many benefits to the public, such as protecting water and air quality, reducing the risk of flooding, conserving forest and woodlands, and ensuring local food production closer to communities. By simply maintaining the land the way it has been used for generations, communities can see a positive return of at least 4 dollars for every 1 invested in voluntary land conservation of forests, farms and ranches.
+!FIELD
+04 dollars for every 1 invested in voluntary land conservation of forests, farms and ranches.
+}
+
+{Q55:
+Having read some more, please indicate now – do you support or oppose continuing to allow private landowners the ability to conserve their lands as working farms, ranches, natural areas and wildlife habitat in your state through these voluntary land conservation agreements?
+!UNKNOWN
+}
+
+{Q56:
+Strongly Support
+Somewhat Support
+Somewhat Oppose
+Strongly Oppose
+____________________________________________________________________________________
+!UNKNOWN
+}
+
+{Q57:
+The following are some statements that those who want to limit landowners’ ability to enter into voluntary land conservation agreements. For each one, please indicate if it is a very convincing, somewhat convincing, not very convincing, or not at all convincing reason to oppose land conservation agreements. (RANDOMIZE)
+!UNKNOWN
+}
+
+{Q58:
+VERY		SOMEWHAT	NOT VERY	NOT AT ALL
+CONV		CONV		CONV		CONV
+1		2		3		4
+!FIELD
+01 2		3		4
+}
+
+{Q59:
+These agreements are just a backhanded way for environmental organizations to seize control of private property. These groups help landowners broker deals with the government, then turn around and become the "managers" of how the land is used, telling landowners what they can and can’t do with their own land.
+!UNKNOWN
+}
+
+{Q60:
+Government is mostly benefiting the wealthy out of state who use these agreements as a tool to avoid paying their fair share of taxes. They come at the expense of millions of hard-working taxpayers at a time when many are struggling to pay the bills each month.
+!UNKNOWN
+}
+
+{Q61:
+These agreements mostly benefit big environmental organizations without fully compensating private property owners. These organizations secure the interest in the land without ever fully explaining the impacts to the landowner, are done on the cheap, and are only intended to add acres to Biden’s 30 by 30 scheme.
+!FIELD
+30 by 30 scheme.  
+}
+
+{Q62:
+These agreements are just another federal land grab as we are federalizing our private property rights. The government uses conservation easements to control private property rights without having to acquire those rights themselves.
+!UNKNOWN
+}
+
+{Q63:
+(SAMPLE A) Once this limitation on a landowner is agreed upon, the terms last forever. Even if the land is sold or inherited, the original terms of the agreement apply.
+!UNKNOWN
+}
+
+{Q64:
+(SAMPLE B) These agreements are contracts with the government that continue forever, even when land is passed down within the family or sold to a new owner. We don't know what kind of economic and ecological changes will occur in the coming years, and with this kind of agreement a landowner would not be allowed to make changes or enhancements to their land in response.
+!UNKNOWN
+}
+
+{Q65:
+These agreements represent a huge loss of revenue and opportunity for local governments. Landowners pay lower property taxes on land under an easement, which means less revenue for things like roads, schools and other needed services in rural communities. (modified from Heritage)
+!UNKNOWN
+}
+
+{Q66:
+These agreements hurt the economies of rural areas by ensuring that land can never be used for productive purposes that would help spur economic growth where it is often needed the most. That means children in rural areas are leaving to seek economic opportunities.
+!UNKNOWN
+}
+
+{Q67:
+These agreements are not necessary. Over a third of our country is owned by some level of government, and the federal government has regulatory power over even more. Private lands already provide hundreds of millions of acres of habitat without necessarily being removed from tax rolls, and there is no reason to expect these private lands will be developed on a massive scale.
+!UNKNOWN
+}
+
+{Q68:
+Having read some more, please indicate now – do you support or oppose continuing to allow private landowners the ability to conserve their lands as working farms, ranches, natural areas and wildlife habitat in your state through these voluntary land conservation agreements?
+!UNKNOWN
+}
+
+{Q69:
+Strongly Support
+Somewhat Support
+Somewhat Oppose
+Strongly Oppose
+____________________________________________________________________________________
+!UNKNOWN
+}
+
+{Q70:
+Thinking about you for a moment –
+!UNKNOWN
+}
+
+{Q71:
+D5.	Do you consider yourself a hunter, an angler or both?
+!UNKNOWN
+}
+
+{Q72:
+HUNTER ONLY
+ANGLER ONLY
+BOTH
+NO/NEITHER
+!UNKNOWN
+}
+
+{Q73:
+D6.	And do you currently or have you ever lived on a farm?
+!UNKNOWN
+}
+
+{Q74:
+Yes/currently 
+2	Yes at some time in the past
+3	No/never
+_________________________________________________________________________________
+!FIELD
+02 Yes at some time in the past
+03 No/never
+}
+
+{Q75:
+And for statistical purposes only --
+!UNKNOWN
+}
+
+{Q76:
+D7.	And what was the last level of education you completed? (DO NOT READ CATEGORIES)
+!UNKNOWN
+}
+
+{Q77:
+1	Graduated High School or Less
+	2	Technical or Vocational School
+	3	Some College
+	4	Graduated College
+	5	Graduate/Professional School
+_____________________________________________________________________________________
+!FIELD
+01 Graduated High School or Less
+02 Technical or Vocational School
+03 Some College
+04 Graduated College
+05 Graduate/Professional School
+}
+
+{Q78:
+D8.	And, in politics today do you consider yourself... (ROTATE)
+!UNKNOWN
+}
+
+{Q79:
+a Republican,
+a Democrat,
+an Independent
+or something else?
+!UNKNOWN
+}
+
+{Q80:
+(ON NEW PAGE IF REPUBLICAN OR DEMOCRAT, ASK:)  Would you call yourself a STRONG (Republican/Democrat) or a NOT-SO-STRONG (Republican/Democrat)?
+!UNKNOWN
+}
+
+{Q81:
+(ON NEW PAGE IF INDEPENDENT/SOMETHING ELSE, ASK:)  Do you think of yourself as closer to the ...(ROTATE)
+!UNKNOWN
+}
+
+{Q82:
+the Republican party
+...or...
+the Democratic party?
+!UNKNOWN
+}
+
+{Q83:
+1	STRONG REPUBLICAN
+	2	NOT-SO-STRONG REPUBLICAN
+!FIELD
+01 STRONG REPUBLICAN
+02 NOT-SO-STRONG REPUBLICAN
+}
+
+{Q84:
+3	LEAN REPUBLICAN
+	4	SOMETHING ELSE/INDEPENDENT
+	5	LEAN DEMOCRAT
+!FIELD
+03 LEAN REPUBLICAN
+04 SOMETHING ELSE/INDEPENDENT
+05 LEAN DEMOCRAT
+}
+
+{Q85:
+6	NOT-SO-STRONG DEMOCRAT
+	7	STRONG DEMOCRAT
+!FIELD
+06 NOT-SO-STRONG DEMOCRAT
+07 STRONG DEMOCRAT
+}
+
+{Q86:
+D9.	Generally speaking, do you consider yourself to be… (ROTATE TOP TO BOTTOM, BOTTOM TO TOP)
+!UNKNOWN
+}
+
+{Q87:
+conservative, 
+moderate 
+...or... 
+liberal 
+on most issues?
+!UNKNOWN
+}
+
+{Q88:
+1	CONSERVATIVE
+2	MODERATE
+3	LIBERAL
+!FIELD
+01 CONSERVATIVE
+02 MODERATE
+03 LIBERAL 
+}
+

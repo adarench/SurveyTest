@@ -1,0 +1,1202 @@
+{Q1:
+CMI Florida & Texas Republican Voters
+Draft 4a
+N=250 Republicans per state / N=500 Republicans total
+!FIELD
+250 Republicans per state / N=500 Republicans total
+}
+
+{Q2:
+Welcome!
+!UNKNOWN
+}
+
+{Q3:
+Thank you for participating in this survey. There are no wrong answers – just your opinions and we want to hear them!
+!UNKNOWN
+}
+
+{Q4:
+We have tested the survey and found that, on average, it takes about 15 minutes to complete.
+!FIELD
+15 minutes to complete.
+}
+
+{Q5:
+Please know that your responses will be kept strictly confidential and no material that identifies your response will be distributed. This survey is NOT for marketing purposes. We are not attempting to sell anything, nor will your participation result in any e-mails in the future to sell you anything.
+!UNKNOWN
+}
+
+{Q6:
+To start, please answer a few questions about yourself, just to be sure we have a representative sample.
+!UNKNOWN
+}
+
+{Q7:
+A.	In which state do you currently live?
+(ALPHABETIZED DROP DOWN LIST OF 50 STATES + THE DISTRICT OF COLUMBIA)
+!FIELD
+50 STATES + THE DISTRICT OF COLUMBIA)
+}
+
+{Q8:
+Punch for Not Sure (THANK AND TERMINATE)
+!FIELD
+Punch for Not Sure (THANK AND TERMINATE)
+}
+
+{Q9:
+ALLOW FLORIDA & TEXAS TO CONTINUE. TERMINATE OTHERS.
+!UNKNOWN
+}
+
+{Q10:
+B.	And, in which county do you currently live? (Drop box of counties in alphabetical order)
+!UNKNOWN
+}
+
+{Q11:
+ONLY SHOW COUNTIES FOR STATE SELECTED IN QA
+!UNKNOWN
+}
+
+{Q12:
+D1.	Please record your age.
+!UNKNOWN
+}
+
+{Q13:
+___ ___ ___ ___ (CONTINUE IF 18+)
+!UNKNOWN
+}
+
+{Q14:
+D2A.	Please record your gender
+!UNKNOWN
+}
+
+{Q15:
+1	Male 
+	2	Female 
+	3	Identify in some other way
+!FIELD
+01 Male 
+02 Female 
+03 Identify in some other way
+}
+
+{Q16:
+C.	Are you registered to vote?
+!UNKNOWN
+}
+
+{Q17:
+1	Yes
+	2	No (THANK AND TERMINATE)
+!FIELD
+01 Yes
+02 No (THANK AND TERMINATE)
+}
+
+{Q18:
+3	Not Sure (THANK AND TERMINATE)
+!FIELD
+03 Not Sure (THANK AND TERMINATE)
+}
+
+{Q19:
+(SHOW ON SAME PAGE AS D4A/B) And, again, just to make sure we have a representative sample…
+!FIELD
+(SHOW ON SAME PAGE AS D4A/B) And, again, just to make sure we have a representative sample…
+}
+
+{Q20:
+(TEXAS)
+D4A.	In politics today, do you consider yourself a ... (ROTATE TOP-TO-BOTTOM, BOTTOM-TO-TOP)
+!UNKNOWN
+}
+
+{Q21:
+1	Strong Republican
+ 	2	Not-so-strong Republican
+	3	Lean towards the Republicans
+!FIELD
+01 Strong Republican
+02 Not-so-strong Republican
+03 Lean towards the Republicans
+}
+
+{Q22:
+4	Something else/Independent (TERMINATE)
+!FIELD
+04 Something else/Independent (TERMINATE)
+}
+
+{Q23:
+5 	Lean towards the Democrats (TERMINATE)
+ 	6	Not-so-strong Democrat (TERMINATE)
+ 	7	Strong Democrat (TERMINATE)
+!FIELD
+05 Lean towards the Democrats (TERMINATE)
+06 Not-so-strong Democrat (TERMINATE)
+07 Strong Democrat (TERMINATE)
+}
+
+{Q24:
+(FLORIDA)
+D4B.	SCREEN 1: Are you registered to vote as a... (ROTATE FIRST TWO CHOICES) a Republican, a Democrat, or something else?
+!UNKNOWN
+}
+
+{Q25:
+SCREEN 2:	(IF REPUBLICAN, ASK) Would you call yourself a STRONG REPUBLICAN or a NOT-SO-STRONG REPUBLICAN?
+!UNKNOWN
+}
+
+{Q26:
+(IF SOMETHING ELSE, ASK) Do you think of yourself as closer to (ROTATE) the Republican party or to the Democratic party?
+!UNKNOWN
+}
+
+{Q27:
+1	Strong Republican 
+2	Not-so-strong Republican
+!FIELD
+01 Strong Republican 
+02 Not-so-strong Republican
+}
+
+{Q28:
+3	Lean towards the Republicans (TERMINATE)
+4	Something else/Independent (TERMINATE)
+5 	Lean towards the Democrats (TERMINATE)
+!FIELD
+03 Lean towards the Republicans (TERMINATE)
+04 Something else/Independent (TERMINATE)
+05 Lean towards the Democrats (TERMINATE)
+}
+
+{Q29:
+6	Not-so-strong Democrat (TERMINATE)
+7	Strong Democrat (TERMINATE)
+!FIELD
+06 Not-so-strong Democrat (TERMINATE)
+07 Strong Democrat (TERMINATE)
+}
+
+{Q30:
+D5E.	Generally speaking, do you consider yourself to be (ROTATE TOP TO BOTTOM/BOTTOM TO TOP) conservative, moderate or liberal on most issues? (ROTATE PUNCHES TO MATCH QUESTION WORDING)
+!UNKNOWN
+}
+
+{Q31:
+1	Very Conservative
+	2	Somewhat Conservative
+!FIELD
+01 Very Conservative
+02 Somewhat Conservative 
+}
+
+{Q32:
+3	Moderate
+!FIELD
+03 Moderate
+}
+
+{Q33:
+4	Somewhat Liberal 
+	5	Very Liberal
+!FIELD
+04 Somewhat Liberal 
+05 Very Liberal
+}
+
+{Q34:
+D3A.	What is the last grade you completed in school?
+!UNKNOWN
+}
+
+{Q35:
+1	Some Grade School (Grades 1-8) 
+	2	Some High School (Grades 9-11) 
+	3	Graduated High School (Grade 12)
+	4	Technical/Vocational School
+	5	Some College
+	6	Graduated College (e.g. Bachelor of Arts, Bachelor of Science)
+	7	Graduate/Professional School (e.g. PhD, MD, JD)
+!FIELD
+01 Some Grade School (Grades 1-8) 
+02 Some High School (Grades 9-11) 
+03 Graduated High School (Grade 12)
+04 Technical/Vocational School
+05 Some College
+06 Graduated College (e.g. Bachelor of Arts, Bachelor of Science)
+07 Graduate/Professional School (e.g. PhD, MD, JD)
+}
+
+{Q36:
+D6A.	What is your main racial or ethnic heritage? Is it... (RANDOMIZE – SHOW :5 LAST)
+!FIELD
+05 LAST)
+}
+
+{Q37:
+1	Caucasian or White
+	2	African American or Black
+	3	Hispanic, Latino or some other Spanish speaking background 
+	4	Asian or Pacific Islander
+	8	Native American or American Indian
+	5	Other Ethnicity or Mixed Ethnicity (Please specify)
+!FIELD
+01 Caucasian or White
+02 African American or Black
+03 Hispanic, Latino or some other Spanish speaking background 
+04 Asian or Pacific Islander
+08 Native American or American Indian
+05 Other Ethnicity or Mixed Ethnicity (Please specify)
+}
+
+{Q38:
+QUAL1.	People are very busy these days and many do not always have time to follow what goes on in news and current events. We are testing whether people read survey questions. To show that you have read this question, please select “none of the above” as the answer to this question. (RANDOMIZE :1-5)
+!UNKNOWN
+}
+
+{Q39:
+CNN (TERMINATE)
+MSNBC (TERMINATE)
+Fox News (TERMINATE)
+ABC, CBS, NBC (TERMINATE)
+OAN, NewsMax or RSBN (TERMINATE)
+!UNKNOWN
+}
+
+{Q40:
+None of the above (CONTINUE)
+!UNKNOWN
+}
+
+{Q41:
+Unsure (TERMINATE)
+!UNKNOWN
+}
+
+{Q42:
+Moving on… (SHOW ON SAME PAGE AS Q1)
+Would you say that things in the country are going in the right direction, or have they pretty seriously gotten off on the wrong track?
+!FIELD
+Moving on… (SHOW ON SAME PAGE AS Q1)
+Would you say that things in the country are going in the right direction, or have they pretty seriously gotten off on the wrong track?
+}
+
+{Q43:
+1	Right Direction
+	2	Wrong Track
+!FIELD
+01 Right Direction
+02 Wrong Track
+}
+
+{Q44:
+No Opinion
+!UNKNOWN
+}
+
+{Q45:
+Now thinking about things here in (Florida/Texas)… (ONLINE – SHOW ON SAME PAGE AS Q2)
+!FIELD
+Now thinking about things here in (Florida/Texas)… (ONLINE – SHOW ON SAME PAGE AS Q2)
+}
+
+{Q46:
+Would you say that things in (FLORIDA/TEXAS) are going in the right direction, or have they pretty seriously gotten off on the wrong track?
+!UNKNOWN
+}
+
+{Q47:
+1	Right Direction
+	2	Wrong Track
+!FIELD
+01 Right Direction
+02 Wrong Track
+}
+
+{Q48:
+No Opinion
+!UNKNOWN
+}
+
+{Q49:
+Do you approve or disapprove of the job (Ron DeSantis/Greg Abbott) is doing as Governor?
+!UNKNOWN
+}
+
+{Q50:
+1	Strongly Approve 
+	2	Somewhat Approve
+	3	Somewhat Disapprove
+	4	Strongly Disapprove
+!FIELD
+01 Strongly Approve 
+02 Somewhat Approve
+03 Somewhat Disapprove
+04 Strongly Disapprove
+}
+
+{Q51:
+5	No Opinion
+!FIELD
+05 No Opinion
+}
+
+{Q52:
+And, do you approve or disapprove of the job the state legislature is doing in (Tallahassee/Austin)?
+!UNKNOWN
+}
+
+{Q53:
+1	Strongly Approve 
+	2	Somewhat Approve
+	3	Somewhat Disapprove
+	4	Strongly Disapprove
+!FIELD
+01 Strongly Approve 
+02 Somewhat Approve
+03 Somewhat Disapprove
+04 Strongly Disapprove
+}
+
+{Q54:
+5	No Opinion
+!FIELD
+05 No Opinion
+}
+
+{Q55:
+Now, thinking about the importance of some current issues...
+!UNKNOWN
+}
+
+{Q56:
+Using a ten point scale (1-10), with ten being VERY IMPORTANT and one being NOT IMPORTANT AT ALL, please rate how important each of the issues listed below are to you personally. (RANDOMIZE) (DROP DOWN MENU 1-10, WITH LABELS ON 1 & 10.)
+!UNKNOWN
+}
+
+{Q57:
+Protecting the environment
+!UNKNOWN
+}
+
+{Q58:
+Supporting job creation and economic growth
+!UNKNOWN
+}
+
+{Q59:
+Bringing down costs of everyday goods, like groceries and gas
+!UNKNOWN
+}
+
+{Q60:
+Balancing the federal budget
+!UNKNOWN
+}
+
+{Q61:
+Improving education
+!UNKNOWN
+}
+
+{Q62:
+Addressing the issue of illegal immigration
+!UNKNOWN
+}
+
+{Q63:
+Protecting our national security
+!UNKNOWN
+}
+
+{Q64:
+Addressing access to abortion
+!UNKNOWN
+}
+
+{Q65:
+Ensuring access to affordable health care
+!UNKNOWN
+}
+
+{Q66:
+Protecting 2nd Amendment rights
+!UNKNOWN
+}
+
+{Q67:
+Developing new global or overseas markets for American-made goods and products
+!UNKNOWN
+}
+
+{Q68:
+Enforcing tariffs and trade laws to protect American manufacturing and innovation
+!UNKNOWN
+}
+
+{Q69:
+Moving on… (SHOW ON SAME PAGE AS QUAL2)
+!FIELD
+Moving on… (SHOW ON SAME PAGE AS QUAL2)
+}
+
+{Q70:
+QUAL2.	Have you seen any live music shows in Shea Stadium, New York in the last 2 years?
+!FIELD
+02 years?
+}
+
+{Q71:
+Yes (TERMINATE)
+No (CONTINUE)
+!UNKNOWN
+}
+
+{Q72:
+Changing topics… (SHOW ON SAME PAGE AS Q17-21)
+!FIELD
+Changing topics… (SHOW ON SAME PAGE AS Q17-21)
+}
+
+{Q73:
+Below you will see a list of some different materials used to package food and beverages. For each item, please indicate if your opinion of that material is (ROTATE TOP TO BOTTOM/BOTTOM TO TOP) favorable, neutral or unfavorable. (ROTATE PUNCHES TO MATCH QUESTION WORDING) (RANDOMIZE Q17-21.)
+!UNKNOWN
+}
+
+{Q74:
+Very		Somewhat	Neutral		Somewhat	Very
+	Favorable	Favorable			Unfavorable	Unfavorable
+	1		2		3		4		5
+!FIELD
+01 2		3		4		5
+}
+
+{Q75:
+Aluminum cans
+!UNKNOWN
+}
+
+{Q76:
+Plastic bottles or containers
+!UNKNOWN
+}
+
+{Q77:
+Glass bottles or jars
+!UNKNOWN
+}
+
+{Q78:
+Paper cartons
+!UNKNOWN
+}
+
+{Q79:
+Steel cans
+!UNKNOWN
+}
+
+{Q80:
+(ASK HALF SAMPLE A IF Q17:1-2, 4-5)
+Thinking some more about aluminum cans… What are some of the reasons you have a (favorable/unfavorable) opinion of aluminum cans? Please be as specific as possible in your response.
+!UNKNOWN
+}
+
+{Q81:
+RECORD RESPONSE VERBATIM
+!VERBATIM
+}
+
+{Q82:
+Moving on… (SHOW ON SAME PAGE AS Q23)
+!FIELD
+Moving on… (SHOW ON SAME PAGE AS Q23)
+}
+
+{Q83:
+Which of the following describes your household the best? (ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
+!UNKNOWN
+}
+
+{Q84:
+Don’t recycle at all
+Recycle occasionally
+Recycle regularly some things, but not all things 
+Recycle the majority of things that can be recycled
+!UNKNOWN
+}
+
+{Q85:
+Thinking some more about the neighborhood where you live… (SHOW ON SAME PAGE AS Q24)
+!FIELD
+Thinking some more about the neighborhood where you live… (SHOW ON SAME PAGE AS Q24)
+}
+
+{Q86:
+Do you have curbside recycling that collects recyclables from your home or do you have to drop-off your recycling at a recycling center when you choose to recycle or do you not have either of these options where you live?
+!UNKNOWN
+}
+
+{Q87:
+Have curbside recycling 
+Have to drop off recycling items at a recycling center
+!UNKNOWN
+}
+
+{Q88:
+Have both options
+Have neither option
+!UNKNOWN
+}
+
+{Q89:
+Unsure
+!UNKNOWN
+}
+
+{Q90:
+On a scale from zero to ten (0-10) where zero means recycling has no positive impact for the country and a ten means recycling has a very large positive impact for the country, how would you rate the impact recycling has on the country? (RECORD EXACT RESPONSE. DROP DOWN MENU WITH LABELS ON 0 & 10.)
+!UNKNOWN
+}
+
+{Q91:
+How likely are you to recycle each of the following types of products? Please use a scale from 1-10, where one means you are not likely to recycle that type of product and ten means you are extremely likely to recycle that type of product. (RANDOMIZE) (RECORD EXACT RESPONSE. DROP DOWN MENU WITH LABELS ON 1 & 10.)
+!UNKNOWN
+}
+
+{Q92:
+Newspapers
+!UNKNOWN
+}
+
+{Q93:
+Plastic bottles, such as soft drink or juice bottles
+!UNKNOWN
+}
+
+{Q94:
+Aluminum cans, such as soft drink or beer cans
+!UNKNOWN
+}
+
+{Q95:
+Cardboard or paper boxes, such as cereal boxes or shipping boxes
+!UNKNOWN
+}
+
+{Q96:
+Glass bottles or jars
+!UNKNOWN
+}
+
+{Q97:
+Steel cans, such as soup cans or fruit/vegetable cans
+!UNKNOWN
+}
+
+{Q98:
+Plastic containers, such as laundry detergent containers or household cleaner containers
+!UNKNOWN
+}
+
+{Q99:
+Do you believe recycling items such as newspapers and aluminum cans… (ROTATE)
+!UNKNOWN
+}
+
+{Q100:
+Does more to reduce waste and help the environment
+…or…
+Does more to make people feel good
+!UNKNOWN
+}
+
+{Q101:
+Don’t Know/Unsure
+!UNKNOWN
+}
+
+{Q102:
+How much, if at all, does it bother you to see people throwing away things in the trash that could be recycled? (ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
+!UNKNOWN
+}
+
+{Q103:
+A lot
+Some
+Not much
+Not at all
+!UNKNOWN
+}
+
+{Q104:
+(ASK IF RECYCLE//Q23:2-4)
+When you recycle, how confident are you that a can or bottle will actually be recycled and not end up in a landfill? (ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
+!UNKNOWN
+}
+
+{Q105:
+1	Very confident
+2	Somewhat confident
+3	Not too confident
+4	Not at all confident
+!FIELD
+01 Very confident
+02 Somewhat confident
+03 Not too confident
+04 Not at all confident
+}
+
+{Q106:
+In general… (ROTATE)
+!UNKNOWN
+}
+
+{Q107:
+Do you favor government recycling programs that make recycling mandatory for everyone
+…or…
+Do you favor a voluntary approach to recycling
+Neither of these
+!UNKNOWN
+}
+
+{Q108:
+Below are a few reasons some people have given to help explain why they decide to recycle or not. Using a ZERO to TEN (0-10) scale where ZERO means that is not an important reason to you personally and a TEN means that is a very important reason to you personally, please rate how important each reason is to you personally in your decision whether or not to recycle. (RANDOMIZE. DROP DOWN MENU WITH LABELS ON 0 & 10.)
+!UNKNOWN
+}
+
+{Q109:
+We can reduce the amount of waste going into landfills.
+!UNKNOWN
+}
+
+{Q110:
+By recycling, we use less energy to make new products and conserve more of our natural resources used to make new products.
+!UNKNOWN
+}
+
+{Q111:
+We can slow down global warming and climate change for future generations by recycling now.
+!UNKNOWN
+}
+
+{Q112:
+Every recycled container can be used to make another consumer product.
+!UNKNOWN
+}
+
+{Q113:
+We can reduce litter on our roadways and in our waterways.
+!UNKNOWN
+}
+
+{Q114:
+We can rely less on foreign countries for the materials and natural resources needed to make new products.
+!UNKNOWN
+}
+
+{Q115:
+Everyone in my neighborhood recycles so I feel I should do it too.
+!UNKNOWN
+}
+
+{Q116:
+Recycling creates good jobs in my community and is good for the economy.
+!UNKNOWN
+}
+
+{Q117:
+I have a moral responsibility to recycle.
+!UNKNOWN
+}
+
+{Q118:
+When it comes to recycling items such as plastic bottles, aluminum cans, and cardboard boxes, who should bear the most responsibility for making sure plastic, aluminum and cardboard waste is responsibly and properly recycled? (RANDOMIZE)
+!UNKNOWN
+}
+
+{Q119:
+The individual consumers who purchase and utilize the materials
+The companies that produce and manufacture the materials
+Private recycling companies
+State and local governments
+The federal government
+...or...
+None of the above (ALWAYS ASK LAST)
+!UNKNOWN
+}
+
+{Q120:
+Don’t Know/Unsure
+!UNKNOWN
+}
+
+{Q121:
+Now thinking about just one material and that is aluminum… (SHOW ON SAME PAGE AS Q47)
+!FIELD
+Now thinking about just one material and that is aluminum… (SHOW ON SAME PAGE AS Q47)
+}
+
+{Q122:
+Have you seen, read, or heard anything about aluminum and the aluminum industry in the past two to three months?
+!UNKNOWN
+}
+
+{Q123:
+Yes, A Lot
+Yes, Some
+No, Have Not Seen, Read or Heard
+!UNKNOWN
+}
+
+{Q124:
+(IF Q47:1-2 / YES HAVE SEEN/READ/HEARD)
+And has what you have seen, read or heard in the past two or three months about aluminum and the aluminum industry given you… (ROTATE)
+!UNKNOWN
+}
+
+{Q125:
+A MORE favorable impression of aluminum and the aluminum industry
+A LESS favorable impression of aluminum and the aluminum industry
+…or…
+Did it not really make any difference in your opinion one way or the other
+!UNKNOWN
+}
+
+{Q126:
+(IF Q47:1-2 / YES HAVE SEEN/READ/HEARD)
+In the space below, please write down what you have seen, read or heard in the past two or three months about aluminum and the aluminum industry. Please be as specific as possible in your response.
+!UNKNOWN
+}
+
+{Q127:
+RECORD RESPONSE VERBATIM
+!VERBATIM
+}
+
+{Q128:
+Do you favor or oppose bottle and can deposit laws that require a deposit on all beverages sold in bottles or cans and require returning the can or bottle to a redemption center to collect the deposit?
+!UNKNOWN
+}
+
+{Q129:
+Strongly favor
+Somewhat favor
+Somewhat oppose
+Strongly oppose
+!UNKNOWN
+}
+
+{Q130:
+Not sure/No strong opinion
+!UNKNOWN
+}
+
+{Q131:
+(ASK IF OPPOSE DEPOSIT LAWS//Q50:3-4)
+What are some of the reasons you oppose bottle and can deposit laws that require a deposit on all beverages sold in bottles or cans and require returning the can or bottle to a redemption center to collect the deposit? Please be as specific as possible in your response.
+!UNKNOWN
+}
+
+{Q132:
+RECORD RESPONSE VERBATIM
+!VERBATIM
+}
+
+{Q133:
+If (Florida/Texas) enacted a bottle and can deposit law how likely would you be to take each of the following actions? Please rate yourself on a scale from 1-10, where 1 means you are not at all likely to take that action and 10 means you are very likely to take that action. (RANDOMIZE. DROP DOWN MENU WITH LABELS ON 1 & 10.)
+!FIELD
+01 means you are not at all likely to take that action and 10 means you are very likely to take that action. (RANDOMIZE. DROP DOWN MENU WITH LABELS ON 1 & 10.)
+}
+
+{Q134:
+Return bottles and cans to a redemption center to collect the deposit
+!UNKNOWN
+}
+
+{Q135:
+Recycle bottles and cans with your regular recycling, which would mean that you forfeit the deposit
+!UNKNOWN
+}
+
+{Q136:
+Below are some statements made by people who think we should recycle more aluminum. After reading each statement, please indicate how convincing you find the statement as a reason to recycle more aluminum… (ROTATE TOP TO BOTTOM/BOTTOM TO TOP) very convincing, somewhat convincing, not too convincing or not convincing at all. (RANDOMIZE. ROTATE PUNCHES TO MATCH QUESTION WORDING.)
+!UNKNOWN
+}
+
+{Q137:
+Very		Somewhat	Not Too	Not At All	
+	Convincing	Convincing	Convincing	Convincing	
+	1		2		3		4
+!FIELD
+01 2		3		4	
+}
+
+{Q138:
+It is in our national security interest to recycle more aluminum. Recycling aluminum means importing less from countries like China, Russia and United Arab Emirates, all of which are hostile to the United State and in the top five countries from which aluminum is imported.
+!UNKNOWN
+}
+
+{Q139:
+Today, 85% of aluminum produced in the U.S. is made from recycled aluminum products. It is proven that our recycling efforts can greatly help manage our domestic supply and ensure we are more self-sufficient.
+!UNKNOWN
+}
+
+{Q140:
+The recycled aluminum industry is adding billions of dollars to our economy and thousands of good-paying jobs, with even more investment on the way as demand for aluminum increases.
+!UNKNOWN
+}
+
+{Q141:
+Today, only 45% of aluminum beverage cans are recycled. That means more than 50 billion used beverage cans are going into landfills or ending up in rivers and on streets. These unrecycled cans are worth about $1 billion, and if recycled, the energy savings would equate to powering more than 2 million homes.
+!FIELD
+50 billion used beverage cans are going into landfills or ending up in rivers and on streets. These unrecycled cans are worth about $1 billion, and if recycled, the energy savings would equate to powering more than 2 million homes.
+}
+
+{Q142:
+Aluminum is considered one of only eight minerals critical to all sectors of the U.S. economy. The U.S. Department of Energy and the U.S. Department of Defense include it on the list of critical materials. The U.S. does not make enough aluminum or generate enough recycled aluminum to meet domestic demand. Recycling helps de-risk U.S. supply chains that would otherwise be filled by foreign imports.
+!UNKNOWN
+}
+
+{Q143:
+Today, 50 billion used aluminum beverage cans are going into landfills. Increasing recycling rates of these cans helps reduce waste and the negative impact on our environment, including global warming.
+!FIELD
+50 billion used aluminum beverage cans are going into landfills. Increasing recycling rates of these cans helps reduce waste and the negative impact on our environment, including global warming.
+}
+
+{Q144:
+Local governments could better manage and protect taxpayer money through an efficient and effective recycling system rather than traditional waste hauling and landfilling.
+!UNKNOWN
+}
+
+{Q145:
+QUAL3.	For quality control purposes, please select “somewhat convincing.” (TERMINATE IF :1, 3-4)
+!UNKNOWN
+}
+
+{Q146:
+Now that you have read some additional information… (SHOW ON SAME PAGE AS Q61)
+!FIELD
+Now that you have read some additional information… (SHOW ON SAME PAGE AS Q61)
+}
+
+{Q147:
+On a scale from zero to ten where zero means recycling has no positive impact for the country and a ten means recycling has a very large positive impact for the country, how would you rate the impact recycling has on the country? (RECORD EXACT RESPONSE)
+!UNKNOWN
+}
+
+{Q148:
+Please indicate if your opinion of aluminum is (ROTATE TOP TO BOTTOM/BOTTOM TO TOP) favorable, neutral or unfavorable. (ROTATE PUNCHES TO MATCH QUESTION WORDING)
+!UNKNOWN
+}
+
+{Q149:
+Very Favorable
+Somewhat Favorable
+Neutral
+Somewhat Unfavorable
+Very Unfavorable
+!UNKNOWN
+}
+
+{Q150:
+How likely are you to recycle aluminum cans, such as soft drink or beer cans? Please use a scale from 1-10, where one means you are not likely to recycle that type of product and ten means you are extremely likely to recycle that type of product. (RECORD EXACT RESPONSE. DROP DOWN MENU WITH LABELS ON 1 & 10.)
+!UNKNOWN
+}
+
+{Q151:
+(ASK IF SAMPLE B & Q63 RATING IS HIGHER THAN Q28 RATING)
+Earlier in the survey you rated your likelihood to recycle aluminum cans as a (INSERT Q28 RESPONSE) and now you rate your likelihood a (INSERT Q63 RESPONSE). What are some of the reasons you are now more likely to recycle aluminum cans? Please be as specific as possible in your response.
+!FIELD
+63 RATING IS HIGHER THAN Q28 RATING)
+28 RESPONSE) and now you rate your likelihood a (INSERT Q63 RESPONSE). What are some of the reasons you are now more likely to recycle aluminum cans? Please be as specific as possible in your response.
+}
+
+{Q152:
+RECORD RESPONSE VERBATIM
+!VERBATIM
+}
+
+{Q153:
+(SHOW ON SAME PAGE AS ATTRIBUTES) Moving on…
+!FIELD
+(SHOW ON SAME PAGE AS ATTRIBUTES) Moving on…
+}
+
+{Q154:
+On a scale from one to ten, where ten represents a description that is perfect for you and one represents a description that is totally wrong for you, please rate how well each of the following describe you. You can, of course, use any number between one and ten. (RECORD EXACT NUMBER 1-10. DROP DOWN MENU WITH LABELS ON 1 & 10.) (RANDOMIZE)
+!UNKNOWN
+}
+
+{Q155:
+An environmentalist
+!UNKNOWN
+}
+
+{Q156:
+A conservationist
+!UNKNOWN
+}
+
+{Q157:
+A supporter of business and industry interests
+!UNKNOWN
+}
+
+{Q158:
+A MAGA supporter
+!UNKNOWN
+}
+
+{Q159:
+Changing topics… (SHOW ON SAME PAGE AS Q69)
+!FIELD
+Changing topics… (SHOW ON SAME PAGE AS Q69)
+}
+
+{Q160:
+Would you say that climate change is best described as… (ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
+!UNKNOWN
+}
+
+{Q161:
+A crisis
+A major problem, but not a crisis
+A minor problem
+…or…
+Not a problem at all
+!UNKNOWN
+}
+
+{Q162:
+Based on what you have seen, read, or heard, do you have a positive or negative view of Environmental, Social, and Governance investment criteria, also known as ESG?
+!UNKNOWN
+}
+
+{Q163:
+Very Positive
+Somewhat Positive
+Neutral/Not Sure
+Somewhat Negative
+Very Negative
+!UNKNOWN
+}
+
+{Q164:
+Never Heard of ESG
+!UNKNOWN
+}
+
+{Q165:
+Please indicate if you AGREE or DISAGREE with each of the following statements. (RANDOMIZE)
+!UNKNOWN
+}
+
+{Q166:
+Strongly	Not-So-Strongly	Not-So-Strongly	Strongly
+	Agree		Agree			Disagree		Disagree
+	1		2			3			4
+!FIELD
+01 2			3			4
+}
+
+{Q167:
+The government should not be in the business of telling Americans what to do with their trash, including how and when to recycle.
+!UNKNOWN
+}
+
+{Q168:
+I am happy to recycle, but want to do so on my own terms.
+!UNKNOWN
+}
+
+{Q169:
+Big corporations and elite leftists are pushing a woke agenda on climate change and recycling mandates are part of their agenda.
+!UNKNOWN
+}
+
+{Q170:
+I appreciate government running a recycling program, even though it may be challenging to follow it all the time.
+!UNKNOWN
+}
+
+{Q171:
+Changing topics… (SHOW ON SAME PAGE AS QUAL3)
+QUAL4.	Which one of the following is not an animal? (RANDOMIZE :1-5)
+!FIELD
+Changing topics… (SHOW ON SAME PAGE AS QUAL3)
+QUAL4.	Which one of the following is not an animal? (RANDOMIZE :1-5)
+}
+
+{Q172:
+Dog (TERMINATE)
+Elephant (TERMINATE)
+Horse (TERMINATE)
+Bear (TERMINATE)
+Television
+!UNKNOWN
+}
+
+{Q173:
+All of these are animals (TERMINATE)
+!UNKNOWN
+}
+
+{Q174:
+Now just a few more questions for statistical purposes only…
+!UNKNOWN
+}
+
+{Q175:
+P2.	Thinking about past primary elections for President, Governor, U.S. Senate, U.S. Congress, and other state and local offices, do you... (ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
+!UNKNOWN
+}
+
+{Q176:
+1	Always vote in primary elections
+	2	Vote most of the time
+	3	Occasionally vote in primary elections
+		...or...
+	4	Never vote in primary elections
+!FIELD
+01 Always vote in primary elections
+02 Vote most of the time
+03 Occasionally vote in primary elections
+04 Never vote in primary elections
+}
+
+{Q177:
+D9B.	For statistical purposes only, what is your total annual household income?
+!UNKNOWN
+}
+
+{Q178:
+Less than $40,000
+$40,000 - $74,999
+	3	$75,000 - $99,999
+	4	$100,000 - $149,999
+	5	$150,000 or more
+!FIELD
+00 $40,000 - $74,999
+03 $75,000 - $99,999
+04 $100,000 - $149,999
+05 $150,000 or more
+}
+
+{Q179:
+D11A.	And how often would you say that you attend religious services, either in person or online...
+	(ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
+!UNKNOWN
+}
+
+{Q180:
+1	More than once a week
+	2	Weekly
+	3	Almost every week
+	4	Once or twice a month
+	5	A few times a year
+	6	Never
+!FIELD
+01 More than once a week
+02 Weekly
+03 Almost every week
+04 Once or twice a month
+05 A few times a year
+06 Never
+}
+
+{Q181:
+(SHOW ON SAME PAGE AS D16A) Thinking some more about you…
+!FIELD
+(SHOW ON SAME PAGE AS D16A) Thinking some more about you…
+}
+
+{Q182:
+D16A.	Do you have children at home under the age of 18 you are responsible for raising who are not yet in college or the workforce?
+!FIELD
+18 you are responsible for raising who are not yet in college or the workforce?
+}
+
+{Q183:
+1	Yes 					
+	2	No
+!FIELD
+01 Yes 					
+02 No
+}
+
+{Q184:
+D14.	How would you describe the area in which you live? (ROTATE TOP-TO-BOTTOM, BOTTOM-TO-TOP)
+!UNKNOWN
+}
+
+{Q185:
+1	Big city
+	2	Medium or small city
+	3	Suburb
+	4	Small town
+	5	Rural area
+!FIELD
+01 Big city
+02 Medium or small city
+03 Suburb
+04 Small town
+05 Rural area
+}
+
+{Q186:
+OE1.	Now, the following are some community and political activities that some people have done and others have not. How about you? Have you done any of the following AT LEAST ONCE in the past two years? Please select all that apply. (RANDOMIZE :1-8)
+!MULTI
+
+}
+
+{Q187:
+Boycotted a product or company 
+Signed a petition either in person or online taking a position on an issue in the news
+Contributed money, volunteered with or worked for a political party, a candidate, or an organization that works for a cause that you support
+Participated with a community organization, a club, a not-for-profit association or a social group
+Used social media sites like Facebook and Twitter to “like” or follow an issue oriented group, a political organization, or a political candidate or to share news and information about political issues
+Written a letter, emailed or called your Member of Congress or any other local, state, or national public official to express your views
+Regularly read the editorial page of a major newspaper such as the Washington Post, the Wall Street Journal, the New York Times, USA Today or the Los Angeles Times
+Visited the moon (TERMINATE IF SELECTED)
+!UNKNOWN
+}
+
+{Q188:
+None of the above
+!UNKNOWN
+}
+
+{Q189:
+(SHOW ON SAME PAGE AS Z) 
+Z. 	What is your zip code?
+!FIELD
+(SHOW ON SAME PAGE AS Z) 
+Z. 	What is your zip code?
+}
+
+{Q190:
+QUAL5.	Finally, for quality control purposes, please re-enter the county where you currently live.
+!UNKNOWN
+}
+
+{Q191:
+DROP DOWN LIST OF COUNTIES. SHOW SAME LIST AS QB. TERMINATE IF OFFER A DIFFERENT RESPONSE FROM QB.
+!DROPDOWN
+01 Option 1
+02 Option 2
+03 Option 3
+}
+
+{Q192:
+
+!UNKNOWN
+}
+
