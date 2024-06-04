@@ -16,16 +16,15 @@ def parse_question(question_text):
     """
     Parse the question text and determine the schema type.
     """
-    # Patterns for different question types
-    single_choice_pattern = re.compile(r"(\d+\s+\w.*?(\n|$))+")
-    numeric_pattern = re.compile(r"\d{4}\s.*?(\n|$)")
-    open_ended_pattern = re.compile(r"Please describe.*|RECORD RESPONSE VERBATIM")
-    scale_pattern = re.compile(r"Using a scale from \d to \d")
-    dropdown_pattern = re.compile(r"\(ALPHABETIZED DROP DOWN LIST.*\)")
-    other_dropdown_pattern = re.compile(r"(DROP DOWN LIST OF .+)")
-    multiple_choice_pattern = re.compile(r"Please select all that apply|Select all that apply")
-    thank_terminate_pattern = re.compile(r"\(THANK AND TERMINATE\)")
-    next_pattern = re.compile(r"(MOVING ON|CHANGE TOPIC|NEXT QUESTION|SHOW ON SAME PAGE)")
+    single_choice_pattern = re.compile(r"^\d+\s+.*$", re.MULTILINE)
+    numeric_pattern = re.compile(r"\d{4}\s.*?\d{4}", re.MULTILINE)
+    open_ended_pattern = re.compile(r"Please describe.*|RECORD RESPONSE VERBATIM", re.MULTILINE)
+    scale_pattern = re.compile(r"Using a scale from \d to \d", re.MULTILINE)
+    dropdown_pattern = re.compile(r"\(ALPHABETIZED DROP DOWN LIST.*\)", re.MULTILINE)
+    other_dropdown_pattern = re.compile(r"(DROP DOWN LIST OF .+)", re.MULTILINE)
+    multiple_choice_pattern = re.compile(r"Please select all that apply|Select all that apply", re.MULTILINE)
+    thank_terminate_pattern = re.compile(r"\(THANK AND TERMINATE\)", re.MULTILINE)
+    next_pattern = re.compile(r"(MOVING ON|CHANGE TOPIC|NEXT QUESTION|SHOW ON SAME PAGE)", re.MULTILINE)
 
     if single_choice_pattern.search(question_text):
         return "single_choice"
@@ -46,12 +45,12 @@ def parse_question(question_text):
     else:
         return "unknown"
 
-def extract_dropdown_options(question_text):
+def extract_options(question_text):
     """
-    Extract dropdown options from the question text.
+    Extract options from the question text.
     """
-    options = re.findall(r"(\d+)\s+(.*?)(\n|$)", question_text)
-    return "\n".join([f"{int(opt[0]):02d} {opt[1]}" for opt in options])
+    options = re.findall(r"^\d+\s+.*$", question_text, re.MULTILINE)
+    return "\n".join([f"{int(opt.split()[0]):02d} {' '.join(opt.split()[1:])}" for opt in options])
 
 def generate_markup(question_text, question_label):
     """
@@ -60,8 +59,7 @@ def generate_markup(question_text, question_label):
     question_type = parse_question(question_text)
     
     if question_type == "single_choice":
-        options = re.findall(r"(\d+)\s+(.*?)(\n|$)", question_text)
-        options_markup = "\n".join([f"{int(opt[0]):02d} {opt[1]}" for opt in options])
+        options_markup = extract_options(question_text)
         return f"{{{question_label}:\n{question_text.strip()}\n!FIELD\n{options_markup}\n}}"
     
     elif question_type == "numeric":
@@ -74,14 +72,13 @@ def generate_markup(question_text, question_label):
         return f"{{{question_label}:\n{question_text.strip()}\n!NUMERIC,,,1-10\n}}"
     
     elif question_type == "dropdown":
-        options_markup = extract_dropdown_options(question_text)
+        options_markup = extract_options(question_text)
         if not options_markup:  # If no specific options are extracted, add a placeholder
             options_markup = "01 Option 1\n02 Option 2\n03 Option 3"
         return f"{{{question_label}:\n{question_text.strip()}\n!DROPDOWN\n{options_markup}\n}}"
     
     elif question_type == "multiple_choice":
-        options = re.findall(r"(\d+)\s+(.*?)(\n|$)", question_text)
-        options_markup = "\n".join([f"{int(opt[0]):02d} {opt[1]}" for opt in options])
+        options_markup = extract_options(question_text)
         return f"{{{question_label}:\n{question_text.strip()}\n!MULTI\n{options_markup}\n}}"
     
     elif question_type == "thank_terminate":
@@ -99,6 +96,30 @@ def write_markup_to_file(file_path, markup_list):
         for markup in markup_list:
             file.write(markup + "\n\n")
     print(f"Generated markup written to: {output_file_path}")
+
+def split_questions(content):
+    """
+    Split the content into questions based on patterns that indicate the start of a new question.
+    """
+    return re.split(r'(?m)^\s*(?=[A-Z]\d*\.|\d+\s)', content)
+
+def merge_related_content(questions):
+    """
+    Merge related content to ensure questions and their answers are grouped together correctly.
+    """
+    merged_questions = []
+    buffer = []
+
+    for question in questions:
+        if re.match(r'^[A-Z]\d*\.', question) and buffer:
+            merged_questions.append('\n'.join(buffer))
+            buffer = []
+        buffer.append(question.strip())
+
+    if buffer:
+        merged_questions.append('\n'.join(buffer))
+
+    return merged_questions
 
 # Specify the directory containing the files
 directory_path = '.'  # Change this path if needed
@@ -119,7 +140,8 @@ for file_path in file_paths:
         print(f"Read content from {file_path}, length: {len(file_content)} characters")
 
         # Split content into questions and generate markup
-        questions = re.split(r'\n\s*\n', file_content)  # Assuming questions are separated by blank lines
+        questions = split_questions(file_content)
+        questions = merge_related_content(questions)
         markup_list = []
 
         for i, question_text in enumerate(questions):

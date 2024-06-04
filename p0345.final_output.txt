@@ -1,138 +1,77 @@
 {Q1:
 AMA National Online Survey of Physicians 
 Draft 3b
-!UNKNOWN
-}
 
-{Q2:
 Public Opinion Strategies #: 240159
 May 15-30, 2024
-!FIELD
-240159 May 15-30, 2024
-}
 
-{Q3:
 N=800 physicians/residents/medical students
 N=600 Practicing Physicians (300 Primary Care Specialists/300 Other Specialists)
 N=200 Residents and Medical Students (100 Residents/100 Medical Students)
-!FIELD
-800 physicians/residents/medical students
-600 Practicing Physicians (300 Primary Care Specialists/300 Other Specialists)
-200 Residents and Medical Students (100 Residents/100 Medical Students)
-}
 
-{Q4:
 Oversamples to reach a total of: 	
 N=100 Black/African Americans physicians/residents/medical students
 N=100 Latino/Hispanic physicians/residents/medical students
-!FIELD
-100 Black/African Americans physicians/residents/medical students
-100 Latino/Hispanic physicians/residents/medical students
-}
 
-{Q5:
+
 Are you currently a practicing physician, medical resident, intern or fellow, or a student currently in medical school or graduating/graduated from medical school in May 2024?
-!UNKNOWN
-}
 
-{Q6:
 Practicing Physician (QUALIFIES AS PRACTICING PHYSICIAN IN N=600 IF DOES NOT SCREEN OUT BELOW)
 Medical Resident, Intern or Fellow (QUALIFIES AS RESIDENT IN N=200 IF DOES NOT SCREEN OUT BELOW)
 Medical student currently in medical school (QUALIFIES AS STUDENT IN N=200 IF DOES NOT SCREEN OUT BELOW)
 Medical student graduating/graduated from medical school in May 2024 (QUALIFIES AS STUDENT IN N=200 IF DOES NOT SCREEN OUT BELOW)
 No (THANK AND TERMINATE)
-!FIELD
-600 IF DOES NOT SCREEN OUT BELOW)
-200 IF DOES NOT SCREEN OUT BELOW)
-200 IF DOES NOT SCREEN OUT BELOW)
-2024 (QUALIFIES AS STUDENT IN N=200 IF DOES NOT SCREEN OUT BELOW)
-}
 
-{Q7:
 (IF QA:1-2)
-Do you spend at least 20 hours per week in patient care activities?
-!FIELD
-20 hours per week in patient care activities? 
-}
-
-{Q8:
+Do you spend at least 20 hours per week in patient care activities? 
+	
 Yes 
 No (THANK AND TERMINATE)
-!FIELD
-Yes 
-No (THANK AND TERMINATE)
-}
 
-{Q9:
 (IF QA:1)
 How many years have you been practicing in your specialty?
-!UNKNOWN
-}
 
-{Q10:
-1            Less than 1 year 
-              2            1-5 years 
-              3            6-10 years 
-              4            11-15 years 
-              5            16-20 years 
-              6            More than 20 years
-!FIELD
-01 Less than 1 year 
-02 1-5 years 
-03 6-10 years 
-04 11-15 years 
-05 16-20 years 
-06 More than 20 years 
-}
+1            Less than 1 year
+2            1-5 years
+3            6-10 years
+4            11-15 years
+5            16-20 years
+6            More than 20 years 
 
-{Q11:
+
 (IF QA:3)
 What year are you in medical school?
-!UNKNOWN
-}
 
-{Q12:
 First Year – M1 
 Second Year – M2 
 Third Year – M3 
-Fourth Year – M4
-!FIELD
-01 Second Year – M2 
-03 Fourth Year – M4 
-}
+Fourth Year – M4 
 
-{Q13:
+
 D2B.	Please record your gender.
-!UNKNOWN
-}
-
-{Q14:
-1	Male 
-	2	Female
-	3	Identify in some other way
+1	Male
+2	Female
+3	Identify in some other way
 !FIELD
-01 Male 
+01 Less than 1 year
+02 1-5 years
+03 6-10 years
+04 11-15 years
+05 16-20 years
+06 More than 20 years
+01 Male
 02 Female
 03 Identify in some other way
 }
 
-{Q15:
+{Q2:
 D1.	In what year were you born?
-!UNKNOWN
-}
+	
+	_____  _____  _____  _____    (include Decline to answer box)
 
-{Q16:
-_____  _____  _____  _____    (include Decline to answer box)
-!UNKNOWN
-}
-
-{Q17:
 (IF QA:1)
 Please indicate which of the following best describes your medical specialty: (DO NOT RANDOMIZE)
-!UNKNOWN
-}
 
-{Q18:
 1	Allergy/Immunology
 2 	Anesthesiology
 3 	Cardiology
@@ -147,7 +86,7 @@ Please indicate which of the following best describes your medical specialty: (D
 12	Internal Medicine (General)
 13	Medical Genetics
 14	Nephrology
-15  	Neurological Surgery 
+15  	Neurological Surgery
 16 	Neurology
 17 	Obstetrics/Gynecology
 18 	Oncology
@@ -156,15 +95,129 @@ Please indicate which of the following best describes your medical specialty: (D
 21 	Otolaryngology/ENT
 22	Pathology
 23 	Pediatrics
-24 	Physical Medicine & Rehabilitation 
+24 	Physical Medicine & Rehabilitation
 25 	Plastic Surgery
 26	Psychiatry
-27	Pulmonology 
+27	Pulmonology
 28 	Radiology
 29 	Rheumatology
 30 	Surgery
 31	Urology
-32 	Other (Specify____________)
+32 	Other (Specify____________) 
+
+
+PRIMARY CARE PHYSICIANS = PUNCHES 7, 12, 17, OR 23.  
+OTHER SPECIALISTS = ALL THE REMAINING PUNCHES 
+
+
+
+In which state do you (IF PRACTICING PHYSICIAN/RESIDENT: primarily practice medicine/IF STUDENT: attend medical school)? (TARGET SAMPLE/SURVEY ONLY IN 50 STATES PLUS DC)
+1	Alabama	25	Mississippi	52	American Samoa (Terminate)
+2	Alaska			26	Missouri		53	Guam (Terminate)
+3	Arizona			27	Montana		54	Northern Mariana Islands (Terminate)
+4	Arkansas			28	Nebraska		55	Puerto Rico
+5	California	29	Nevada	56	U.S. Virgin Islands (Terminate)
+6	Colorado	30	New Hampshire
+7	Connecticut	31	New Jersey
+8	Delaware	32	New Mexico
+9	District of Columbia	33	New York
+10	Florida			34		North Carolina
+11	Georgia	35	North Dakota
+12	Hawaii	36	Ohio
+13	Idaho			37		Oklahoma
+14	Illinois			38		Oregon
+15	Indiana			39		Pennsylvania
+16	Iowa	40	Rhode Island
+17	Kansas			41		South Carolina
+18	Kentucky	42	South Dakota
+19	Louisiana	43	Tennessee
+20	Maine	44	Texas
+21	Maryland	45	Utah
+22	Massachusetts	46	Vermont
+23	Michigan	47	Virginia
+24	Minnesota	48	Washington
+49	West Virginia
+50	Wisconsin
+51	Wyoming	
+
+
+D7A.	To ensure that we have a representative sample, are you from a Hispanic, Latino or Spanish- speaking background?
+
+Yes, Hispanic
+No, not Hispanic
+Decline to answer 
+
+
+
+D7B.	And again, for statistical purposes only, what is your race? (RANDOMIZE :1-6)
+
+White/Caucasian
+Black/African American
+Hispanic/Latino
+Asian
+American Indian/Alaska Native
+Native Hawaiian/Pacific Islander
+Other (Please specify)
+Decline to answer
+
+
+Thank you for participating in this important survey among physicians, residents, and medical students. This is a confidential survey. Your responses in this survey will be kept completely confidential and no material that identifies your individual responses will be distributed. Results will be reported in aggregate form only. We will not report your individual responses, nor will we identify you as a participant in the survey. This survey is for research purposes only.
+
+(IF QA:1)
+Which of the following best describes your main practice setting?
+1	Solo or small practice (five or fewer physicians)
+2	Single specialty group practice
+3	Multi-specialty group practice
+4	Hospital/health system – teaching/academic
+5	Hospital/health system – non-teaching
+6	Clinic or community health center
+7	Skilled nursing facility
+8	Urgent care facility
+9	Other (Please Specify)
+
+(ASK IF Q3:4-5/HOSPITAL BASED OR QA:2/RESIDENT)
+Thinking about your hospital or health system where you work… (SAME SCREEN AS NEXT)
+
+Roughly how many beds does your hospital or health system have in total?
+1	Less than 100 beds
+2	100 but less than 300 beds
+3	300 but less than 500 beds
+4	500 but less than 1,000 beds
+5	1,000 or more beds
+
+
+
+(ASK IF Q3:4-9 – PRACTICING PHYSICIANS IN HOSPITALS, SKILLED NURSING FACILITIES, CLINICS, URGENT CARE FACILITIES, OTHER)
+Are you employed by the hospital, health system, clinic, or facility?
+1	Yes
+2	No
+
+(ASK IF Q3:1-3 – PRACTICING PHYSICIANS IN SOLO/SMALL, SINGLE SPECIALTY GROUP, OR MULTI-SPECIALTY GROUP PRACTICES)
+Do you have ownership interest in your practice?
+1	Yes
+2	No
+
+(ASK IF Q3:1-3 – PRACTICING PHYSICIANS IN SOLO/SMALL, SINGLE SPECIALTY GROUP, OR MULTI-SPECIALTY GROUP PRACTICES)
+Is your practice a concierge medicine membership fee model or Direct Primary Care (DPC) subscription fee model?
+
+Yes, Concierge medicine fee model
+Yes, Direct Primary Care (DPC) fee model 
+No
+
+(RESUME ALL)
+Moving on… (SAME SCREEN AS NEXT)
+
+Below are a few groups or organizations who are involved in health care policy and advocacy.  As you read each one, please indicate your overall opinion of that group or organization on a 0 to 100 scale, where 0 means you have a cold/very unfavorable opinion of that group or organization and 100 means you have a warm/very favorable opinion of that group or organization, and 50 is neutral. 
+
+You can use any number between 0 and 100 depending on how you feel.  If there is one you do not know too much about, just select “Never heard of” and go onto the next one.
+
+(SHOW SCALE, INCLUDE NEVER HEARD OF BOX TO CHECK)
+
+(RANDOMIZE)
+American Medical Association (AMA)
+AARP
+Your Medical Specialty’s Society or Association
+(INSERT STATE MEDICAL ASSOCIATION BASED ON STATE SELECTED IN Q2 – SEE LIST AT END OF SURVEY)
 !FIELD
 01 Allergy/Immunology
 02 Anesthesiology
@@ -180,7 +233,7 @@ Please indicate which of the following best describes your medical specialty: (D
 12 Internal Medicine (General)
 13 Medical Genetics
 14 Nephrology
-15 Neurological Surgery 
+15 Neurological Surgery
 16 Neurology
 17 Obstetrics/Gynecology
 18 Oncology
@@ -189,138 +242,42 @@ Please indicate which of the following best describes your medical specialty: (D
 21 Otolaryngology/ENT
 22 Pathology
 23 Pediatrics
-24 Physical Medicine & Rehabilitation 
+24 Physical Medicine & Rehabilitation
 25 Plastic Surgery
 26 Psychiatry
-27 Pulmonology 
+27 Pulmonology
 28 Radiology
 29 Rheumatology
 30 Surgery
 31 Urology
-32 Other (Specify____________) 
-}
-
-{Q19:
-PRIMARY CARE PHYSICIANS = PUNCHES 7, 12, 17, OR 23.  
-OTHER SPECIALISTS = ALL THE REMAINING PUNCHES
-!UNKNOWN
-}
-
-{Q20:
-In which state do you (IF PRACTICING PHYSICIAN/RESIDENT: primarily practice medicine/IF STUDENT: attend medical school)? (TARGET SAMPLE/SURVEY ONLY IN 50 STATES PLUS DC)
-!FIELD
-50 STATES PLUS DC)
-}
-
-{Q21:
-1	Alabama	25	Mississippi	52	American Samoa (Terminate)
-	2	Alaska			26	Missouri		53	Guam (Terminate)
-	3	Arizona			27	Montana		54	Northern Mariana Islands (Terminate)
-	4	Arkansas			28	Nebraska		55	Puerto Rico 
-	5	California	29	Nevada	56	U.S. Virgin Islands (Terminate)
-	6	Colorado	30	New Hampshire
-	7	Connecticut	31	New Jersey	
-	8	Delaware	32	New Mexico
-	9	District of Columbia	33	New York
-	10	Florida			34		North Carolina
-	11	Georgia	35	North Dakota
-	12	Hawaii	36	Ohio
-	13	Idaho			37		Oklahoma
-	14	Illinois			38		Oregon
-	15	Indiana			39		Pennsylvania
-	16	Iowa	40	Rhode Island
-	17	Kansas			41		South Carolina
-	18	Kentucky	42	South Dakota
-	19	Louisiana	43	Tennessee
-	20	Maine	44	Texas
-	21	Maryland	45	Utah
-	22	Massachusetts	46	Vermont
-	23	Michigan	47	Virginia
-	24	Minnesota	48	Washington
-			49	West Virginia
-			50	Wisconsin
-			51	Wyoming
-!FIELD
-01 Alabama	25	Mississippi	52	American Samoa (Terminate)
-02 Alaska			26	Missouri		53	Guam (Terminate)
-03 Arizona			27	Montana		54	Northern Mariana Islands (Terminate)
-04 Arkansas			28	Nebraska		55	Puerto Rico 
-05 California	29	Nevada	56	U.S. Virgin Islands (Terminate)
-06 Colorado	30	New Hampshire
-07 Connecticut	31	New Jersey	
-08 Delaware	32	New Mexico
-09 District of Columbia	33	New York
-10 Florida			34		North Carolina
-11 Georgia	35	North Dakota
-12 Hawaii	36	Ohio
-13 Idaho			37		Oklahoma
-14 Illinois			38		Oregon
-15 Indiana			39		Pennsylvania
-16 Iowa	40	Rhode Island
-17 Kansas			41		South Carolina
-18 Kentucky	42	South Dakota
-19 Louisiana	43	Tennessee
-20 Maine	44	Texas
-21 Maryland	45	Utah
-22 Massachusetts	46	Vermont
-23 Michigan	47	Virginia
-24 Minnesota	48	Washington
+32 Other (Specify____________)
+01 Alabama 25 Mississippi 52 American Samoa (Terminate)
+02 Alaska 26 Missouri 53 Guam (Terminate)
+03 Arizona 27 Montana 54 Northern Mariana Islands (Terminate)
+04 Arkansas 28 Nebraska 55 Puerto Rico
+05 California 29 Nevada 56 U.S. Virgin Islands (Terminate)
+06 Colorado 30 New Hampshire
+07 Connecticut 31 New Jersey
+08 Delaware 32 New Mexico
+09 District of Columbia 33 New York
+10 Florida 34 North Carolina
+11 Georgia 35 North Dakota
+12 Hawaii 36 Ohio
+13 Idaho 37 Oklahoma
+14 Illinois 38 Oregon
+15 Indiana 39 Pennsylvania
+16 Iowa 40 Rhode Island
+17 Kansas 41 South Carolina
+18 Kentucky 42 South Dakota
+19 Louisiana 43 Tennessee
+20 Maine 44 Texas
+21 Maryland 45 Utah
+22 Massachusetts 46 Vermont
+23 Michigan 47 Virginia
+24 Minnesota 48 Washington
 49 West Virginia
 50 Wisconsin
-51 Wyoming	
-}
-
-{Q22:
-D7A.	To ensure that we have a representative sample, are you from a Hispanic, Latino or Spanish- speaking background?
-!UNKNOWN
-}
-
-{Q23:
-Yes, Hispanic
-No, not Hispanic
-Decline to answer
-!UNKNOWN
-}
-
-{Q24:
-D7B.	And again, for statistical purposes only, what is your race? (RANDOMIZE :1-6)
-!UNKNOWN
-}
-
-{Q25:
-White/Caucasian
-Black/African American
-Hispanic/Latino
-Asian
-American Indian/Alaska Native
-Native Hawaiian/Pacific Islander
-Other (Please specify)
-Decline to answer
-!UNKNOWN
-}
-
-{Q26:
-Thank you for participating in this important survey among physicians, residents, and medical students. This is a confidential survey. Your responses in this survey will be kept completely confidential and no material that identifies your individual responses will be distributed. Results will be reported in aggregate form only. We will not report your individual responses, nor will we identify you as a participant in the survey. This survey is for research purposes only.
-!UNKNOWN
-}
-
-{Q27:
-(IF QA:1)
-Which of the following best describes your main practice setting?
-!UNKNOWN
-}
-
-{Q28:
-1	Solo or small practice (five or fewer physicians)
-	2	Single specialty group practice
-	3	Multi-specialty group practice
-	4	Hospital/health system – teaching/academic
-	5	Hospital/health system – non-teaching
-	6	Clinic or community health center
-7	Skilled nursing facility
-	8	Urgent care facility
-	9	Other (Please Specify)
-!FIELD
+51 Wyoming
 01 Solo or small practice (five or fewer physicians)
 02 Single specialty group practice
 03 Multi-specialty group practice
@@ -330,347 +287,134 @@ Which of the following best describes your main practice setting?
 07 Skilled nursing facility
 08 Urgent care facility
 09 Other (Please Specify)
-}
-
-{Q29:
-(ASK IF Q3:4-5/HOSPITAL BASED OR QA:2/RESIDENT)
-Thinking about your hospital or health system where you work… (SAME SCREEN AS NEXT)
-!UNKNOWN
-}
-
-{Q30:
-Roughly how many beds does your hospital or health system have in total?
-!UNKNOWN
-}
-
-{Q31:
-1	Less than 100 beds
-	2	100 but less than 300 beds
-	3	300 but less than 500 beds
-	4	500 but less than 1,000 beds
-	5	1,000 or more beds
-!FIELD
 01 Less than 100 beds
 02 100 but less than 300 beds
 03 300 but less than 500 beds
 04 500 but less than 1,000 beds
 05 1,000 or more beds
-}
-
-{Q32:
-(ASK IF Q3:4-9 – PRACTICING PHYSICIANS IN HOSPITALS, SKILLED NURSING FACILITIES, CLINICS, URGENT CARE FACILITIES, OTHER)
-Are you employed by the hospital, health system, clinic, or facility?
-!UNKNOWN
-}
-
-{Q33:
-1	Yes 
-	2	No
-!FIELD
-01 Yes 
+01 Yes
+02 No
+01 Yes
 02 No
 }
 
-{Q34:
-(ASK IF Q3:1-3 – PRACTICING PHYSICIANS IN SOLO/SMALL, SINGLE SPECIALTY GROUP, OR MULTI-SPECIALTY GROUP PRACTICES)
-Do you have ownership interest in your practice?
-!UNKNOWN
-}
-
-{Q35:
-1	Yes 
-	2	No
-!FIELD
-01 Yes 
-02 No
-}
-
-{Q36:
-(ASK IF Q3:1-3 – PRACTICING PHYSICIANS IN SOLO/SMALL, SINGLE SPECIALTY GROUP, OR MULTI-SPECIALTY GROUP PRACTICES)
-Is your practice a concierge medicine membership fee model or Direct Primary Care (DPC) subscription fee model?
-!UNKNOWN
-}
-
-{Q37:
-Yes, Concierge medicine fee model
-Yes, Direct Primary Care (DPC) fee model 
-No
-!UNKNOWN
-}
-
-{Q38:
-(RESUME ALL)
-Moving on… (SAME SCREEN AS NEXT)
-!UNKNOWN
-}
-
-{Q39:
-Below are a few groups or organizations who are involved in health care policy and advocacy.  As you read each one, please indicate your overall opinion of that group or organization on a 0 to 100 scale, where 0 means you have a cold/very unfavorable opinion of that group or organization and 100 means you have a warm/very favorable opinion of that group or organization, and 50 is neutral.
-!FIELD
-00 to 100 scale, where 0 means you have a cold/very unfavorable opinion of that group or organization and 100 means you have a warm/very favorable opinion of that group or organization, and 50 is neutral. 
-}
-
-{Q40:
-You can use any number between 0 and 100 depending on how you feel.  If there is one you do not know too much about, just select “Never heard of” and go onto the next one.
-!FIELD
-00 and 100 depending on how you feel.  If there is one you do not know too much about, just select “Never heard of” and go onto the next one.
-}
-
-{Q41:
-(SHOW SCALE, INCLUDE NEVER HEARD OF BOX TO CHECK)
-!UNKNOWN
-}
-
-{Q42:
-(RANDOMIZE)
-American Medical Association (AMA)
-AARP
-Your Medical Specialty’s Society or Association
-(INSERT STATE MEDICAL ASSOCIATION BASED ON STATE SELECTED IN Q2 – SEE LIST AT END OF SURVEY)
-!UNKNOWN
-}
-
-{Q43:
+{Q3:
 X2.          Which of the following is NOT a color? (RANDOMIZE)
-!UNKNOWN
-}
 
-{Q44:
 Yellow (THANK AND TERMINATE)
 Blue (THANK AND TERMINATE)
 Shoe 
 Red (THANK AND TERMINATE)
-!FIELD
-Yellow (THANK AND TERMINATE)
-Blue (THANK AND TERMINATE)
-Shoe 
-Red (THANK AND TERMINATE)
-}
 
-{Q45:
 (IF Q8:0-100 / ABLE TO RATE THE AMA)
 Thinking some more about one of these groups…the American Medical Association (AMA)… (SHOW ON SAME SCREEN AS FOLLOWING QUESTION/SERIES)
-!UNKNOWN
-}
 
-{Q46:
 Listed below are some statements about the AMA. Please record how much you agree or disagree with each statement using a scale of 1 to 10 where 1 means you strongly disagree and 10 means you strongly agree with the statement.  You can choose any number between 1 and 10 depending on how you feel.   (RANDOMIZE)
-!FIELD
-01 to 10 where 1 means you strongly disagree and 10 means you strongly agree with the statement.  You can choose any number between 1 and 10 depending on how you feel.   (RANDOMIZE)
-}
 
-{Q47:
 The AMA does a good job of advocating for physicians in the U.S.
 The AMA represents the interests of physicians in the U.S. well 
 The AMA is an impactful and effective advocacy organization
 The AMA is focused on and addresses the most important issues impacting physicians in the U.S. today
-!UNKNOWN
-}
 
-{Q48:
+
 (SHOW ALL) (SHOW THIS ON SCREEN BY ITSELF AS A TRANSITION) 
 Moving on and thinking about different issues and challenges today in the practice of medicine and health care…
-!UNKNOWN
-}
 
-{Q49:
 (SAMPLE C) 
-If you could give the AMA some advice regarding the policies you think they should support to improve Medicare, what do you think they should focus on that would be most helpful? What would you recommend in terms of how to improve Medicare?
-!UNKNOWN
-}
+If you could give the AMA some advice regarding the policies you think they should support to improve Medicare, what do you think they should focus on that would be most helpful? What would you recommend in terms of how to improve Medicare?  
 
-{Q50:
 INSERT TEXTBOX
-!UNKNOWN
-}
 
-{Q51:
 (SAMPLES E/F) (Q5:1 – EMPLOYED PRACTICING PHYSICIANS)
-If you could give the AMA some advice regarding the policies you think they should support that are impacting employed physicians like you, what do you think they should focus on that would be most helpful for employed physicians? What are the major issues you are encountering?
-!UNKNOWN
-}
+If you could give the AMA some advice regarding the policies you think they should support that are impacting employed physicians like you, what do you think they should focus on that would be most helpful for employed physicians? What are the major issues you are encountering?  
 
-{Q52:
 INSERT TEXTBOX
-!UNKNOWN
-}
 
-{Q53:
-Next, listed below are some broad topic and issue areas that physicians have mentioned as being important for physician advocacy organizations like the American Medical Association (AMA) to address on behalf of physicians in the U.S. For each, please record how high of a priority you think this should be for the AMA to address. (RANDOMIZE)
-!UNKNOWN
-}
 
-{Q54:
+Next, listed below are some broad topic and issue areas that physicians have mentioned as being important for physician advocacy organizations like the American Medical Association (AMA) to address on behalf of physicians in the U.S. For each, please record how high of a priority you think this should be for the AMA to address. (RANDOMIZE) 
+
 Do you think it should be the single most important priority for AMA to address, a high priority but not the single most important, a medium priority, a low priority, or not a priority at all?
-!UNKNOWN
-}
 
-{Q55:
 Single Most		High		Medium	Low		Not At All
 Important Priority	Priority		Priority		Priority		Priority
-1			2		3		4		5
-!FIELD
-01 2		3		4		5 
-}
+1			2		3		4		5 
 
-{Q56:
 Administrative and regulatory burdens – addressing payer-imposed barriers to care, such as prior authorization, reducing reporting requirements that do not contribute to better patient care, and health plan payment policy transparency
-!UNKNOWN
-}
 
-{Q57:
 Digital health infrastructure – making digital health infrastructure more physician friendly such as improving EHR interoperability and practice management software, preserving coverage of telemedicine, supporting integration of artificial intelligence (AI)-based tools, and addressing government requirements and liability issues
-!UNKNOWN
-}
 
-{Q58:
 Non-physician provider scope of practice expansions – opposing nurse practitioner and other non-physician professional scope of practice expansions and supporting physician-led team-based care
-!UNKNOWN
-}
 
-{Q59:
 Physician wellness – supporting programs that promote physician well-being and ensure that physicians are protected when seeking care for their mental health and other wellness needs
-!UNKNOWN
-}
 
-{Q60:
 Medicare payment reform – improving the Medicare physician payment system to support innovation in health care delivery, reduce administrative burdens, enhance the clinical relevance of reporting programs, and promote the financial viability of physician practices
-!UNKNOWN
-}
 
-{Q61:
-Private practice sustainability efforts – ensuring that physicians in private practice have access to the necessary support to remain financially viable and helping reduce industry mergers and consolidations of physician private practices
-!UNKNOWN
-}
+Private practice sustainability efforts – ensuring that physicians in private practice have access to the necessary support to remain financially viable and helping reduce industry mergers and consolidations of physician private practices  
 
-{Q62:
 Medical education and physician workforce issues – addressing graduate medical education funding, physician workforce shortages, workforce diversity, medical student debt, and medical student and resident rights
-!UNKNOWN
-}
 
-{Q63:
 Patient mental and behavioral access issues – mental health coverage, parity in coverage, and access to treatment, including for substance use disorders
-!UNKNOWN
-}
 
-{Q64:
+
 Government interference in the practice of medicine – oppose politically influenced policies that mandate or prohibit specific services or types of care, or impact patient-physician communications and decision-making
-!UNKNOWN
-}
 
-{Q65:
 Health insurance coverage – supporting efforts to enroll uninsured patients in ACA plans, Medicaid expansion in states, and expanding Medicare coverage benefits for seniors
-!UNKNOWN
-}
 
-{Q66:
+
 Now, if you learned that the AMA is working on addressing all these issues as part of their efforts to advocate on behalf of physicians, does this give you a much more favorable, somewhat more favorable, somewhat less favorable, or much less favorable opinion of the AMA or does it not make a difference in your opinion of the AMA one way or the other?
-!UNKNOWN
-}
 
-{Q67:
 Much more favorable
 Somewhat more favorable
 Somewhat less favorable
 Much less favorable
 No Difference
-!UNKNOWN
-}
 
-{Q68:
-Thinking more specifically about physicians using digital health infrastructure (such as health information technology, electronic health records, telehealth, practice management software, and AI-based tools) in the practice of medicine…(SHOW ON SAME SCREEN AS NEXT QUESTION)
-!FIELD
-Thinking more specifically about physicians using digital health infrastructure (such as health information technology, electronic health records, telehealth, practice management software, and AI-based tools) in the practice of medicine…(SHOW ON SAME SCREEN AS NEXT QUESTION)
-}
 
-{Q69:
+Thinking more specifically about physicians using digital health infrastructure (such as health information technology, electronic health records, telehealth, practice management software, and AI-based tools) in the practice of medicine…(SHOW ON SAME SCREEN AS NEXT QUESTION)
+
 (ROTATE Q29-Q30)
 Overall, do you think that the incorporation of digital health infrastructure into the practice of medicine has improved the quality-of-care physicians are able to provide to their patients today?
-!UNKNOWN
-}
 
-{Q70:
 Yes
 No  
 Not sure
-!UNKNOWN
-}
 
-{Q71:
 (IF QA:1/PRACTICING PHYSICIAN) In general, would you say the incorporation of digital health infrastructure into the practice of medicine is having positive impact, a negative impact, or has it not had much of an impact one way or the other on how you practice medicine with patients today?
-!UNKNOWN
-}
 
-{Q72:
 Positive impact
 Negative impact
 No impact
-!UNKNOWN
-}
 
-{Q73:
+
 (SAMPLE D) (IF Q29:1 or Q30:1)
-In the space provided below, please write down how the use of digital health infrastructure in the practice of medicine has either enhanced your practice of medicine with patients, impacted the quality of care you provide to your patients, or had a positive impact on the ways physicians practice medicine today.
-!FIELD
-01 or Q30:1)
-}
+In the space provided below, please write down how the use of digital health infrastructure in the practice of medicine has either enhanced your practice of medicine with patients, impacted the quality of care you provide to your patients, or had a positive impact on the ways physicians practice medicine today.   
 
-{Q74:
 INSERT TEXTBOX
-!UNKNOWN
-}
 
-{Q75:
 (Q5:1 – EMPLOYED PRACTICING PHYSICIANS) 
 Thinking more specifically about things the AMA could do to address issues of concern mentioned by employed physicians…(SHOW ON SAME SCREEN AS NEXT QUESTION)
-!FIELD
-(Q5:1 – EMPLOYED PRACTICING PHYSICIANS) 
-Thinking more specifically about things the AMA could do to address issues of concern mentioned by employed physicians…(SHOW ON SAME SCREEN AS NEXT QUESTION)
-}
 
-{Q76:
 Which ONE of the following issues, mentioned by employed physicians, do you feel is most important for the AMA to address? (RANDOMIZE PUNCHES 1-6)
-!UNKNOWN
-}
 
-{Q77:
 (IF SELECT PUNCHES 1-6, REMOVE CHOICE AND ASK) Which is the next most important for the AMA to address?
-!UNKNOWN
-}
 
-{Q78:
 Non-compete agreements and other contract issues
 Payment agreements
 Physician unions
 Workplace wellness
 Hospital-Medical staff relations
 Peer review and performance evaluations
-!UNKNOWN
-}
 
-{Q79:
 Other (Please Specify)
 None of these are important
-!UNKNOWN
-}
 
-{Q80:
-Moving on and thinking now about the AMA’s efforts and Medicare Payment Reform… (SAME SCREEN AS NEXT QUESTION)
-!FIELD
-Moving on and thinking now about the AMA’s efforts and Medicare Payment Reform… (SAME SCREEN AS NEXT QUESTION)
-}
 
-{Q81:
+Moving on and thinking now about the AMA’s efforts and Medicare Payment Reform… (SAME SCREEN AS NEXT QUESTION)
+
 Which ONE of the following issues within the broader topic area of Medicare Payment Reform do you feel is most important for the AMA to address? (RANDOMIZE PUNCHES 1-8)
-!UNKNOWN
-}
 
-{Q82:
 (IF SELECT PUNCHES 1-8, REMOVE CHOICE AND ASK) Which is the next most important for the AMA to address?
-!UNKNOWN
-}
 
-{Q83:
 Adjust Medicare payment rates annually with inflation to account for rising practice costs
 Choice of Medicare payment models, including both alternative payment models and fee-for-service
 Reduce the frequency of across-the-board Medicare payment cuts to offset any payment increases for individual services listed in the physician fee schedule
@@ -679,182 +423,91 @@ Make Medicare incentive awards attainable for all practice types, from large hea
 Improve clinical relevance of quality measures in Medicare
 Reform Medicare payment system to support innovation in health care delivery
 Address the severity of potential payment penalties under the Medicare merit-based incentive payment system (MIPS)
-!UNKNOWN
-}
 
-{Q84:
 Other (Please Specify)
 None of these are important
-!UNKNOWN
-}
 
-{Q85:
 (IF QA:1 – PRACTICING PHYSICIANS)
 Moving on and thinking about your practice, do you accept the following payers in your practice?
-!UNKNOWN
-}
 
-{Q86:
 YES	NO
 1	2
-!FIELD
-01 2
-}
 
-{Q87:
 Medicare 
 Medicaid
-!UNKNOWN
-}
 
-{Q88:
 (IF Q34:1)
-Roughly, what percentage of your patients are on Medicare?
-!UNKNOWN
-}
+Roughly, what percentage of your patients are on Medicare? 
 
-{Q89:
 INSERT TEXTBOX ______% (ACCEPT WHOLE NUMBERS ONLY) 
 (INCLUDE BOX TO CHECK FOR “DON’T KNOW”)
-!UNKNOWN
-}
 
-{Q90:
+
 (IF Q35:1)
-And, roughly, what percentage of your patients are on Medicaid?
-!UNKNOWN
-}
+And, roughly, what percentage of your patients are on Medicaid? 
 
-{Q91:
 INSERT TEXTBOX ______% (ACCEPT WHOLE NUMBERS ONLY) 
 (INCLUDE BOX TO CHECK FOR “DON’T KNOW”)
-!UNKNOWN
-}
 
-{Q92:
+
 Thinking more broadly about Medicare…
-!UNKNOWN
-}
 
-{Q93:
 Overall, how well would you say that Medicare is meeting the needs of patients on Medicare?
-!UNKNOWN
-}
 
-{Q94:
 Very Well
 Somewhat Well
 Not Too Well
 Not At All Well
-!UNKNOWN
-}
 
-{Q95:
+
 Thinking now about differences and similarities in care between patients on Medicare versus patients under the age of 65 with private health plans…
-!FIELD
-65 with private health plans…
-}
 
-{Q96:
-Same		Better		Worse
-	1		2		3
-!FIELD
-01 2		3
-}
+	Same		Better		Worse
+1		2		3
 
-{Q97:
 On average, do you think…(RANDOMIZE)
-!UNKNOWN
-}
 
-{Q98:
 Medicare patients receive the same, better, or worse communication from their physicians and care team as patients under the age of 65 with private health plans?
-!FIELD
-65 with private health plans?
-}
 
-{Q99:
 Medicare patients receive the same, better, or worse quality of medical care from their physicians and care team as patients under the age of 65 with private health plans?
-!FIELD
-65 with private health plans?
-}
 
-{Q100:
 Medicare patients have the same, better, or worse access to treatments and medical care as patients under the age of 65 with private health plans?
-!FIELD
-65 with private health plans?
-}
 
-{Q101:
 Medicare patients have the same, better, or worse access to timely delivery of medical care as patients under the age of 65 with private health plans?
-!FIELD
-65 with private health plans?
-}
 
-{Q102:
 (IF Q34:1 – CURRENTLY ACCEPTS MEDICARE)
 And, thinking some more specifically about Medicare patients and your practice…
-!UNKNOWN
-}
 
-{Q103:
-Are you currently accepting NEW Medicare patients in your practice?
-!UNKNOWN
-}
+Are you currently accepting NEW Medicare patients in your practice? 
 
-{Q104:
 Yes
 No
-!UNKNOWN
-}
 
-{Q105:
+
 (ASK IF Q3:1-3 – PRACTICING PHYSICIANS IN SOLO/SMALL, SINGLE SPECIALTY GROUP, OR MULTI-SPECIALTY GROUP PRACTICES)
 In the past three to five years, have you limited the number of NEW Medicare patients you accept in your practice?
-!UNKNOWN
-}
 
-{Q106:
 Yes
 No
-!UNKNOWN
-}
 
-{Q107:
 (ASK IF Q3:1-3 – PRACTICING PHYSICIANS IN SOLO/SMALL, SINGLE SPECIALTY GROUP, OR MULTI-SPECIALTY GROUP PRACTICES)
-In the next three to five years, do you have plans to either limit the number of EXISTING Medicare patients in your practice or limit or stop accepting NEW Medicare patients in your practice?
-!UNKNOWN
-}
+In the next three to five years, do you have plans to either limit the number of EXISTING Medicare patients in your practice or limit or stop accepting NEW Medicare patients in your practice? 
 
-{Q108:
 Yes, plan to limit the number of existing Medicare patients
 Yes, plan to limit or stop accepting new Medicare patients
 Yes, plan to do both 
 No
-!UNKNOWN
-}
 
-{Q109:
 (SAMPLES D/E) 
 (IF Q43:2 AND Q3:1-3 – NOT ACCEPTING NEW CURRENTLY & PRACTICES IN SOLO/SMALL, SINGLE SPECIALTY GROUP, OR MULTI-SPECIALTY GROUP SETTING) OR (Q44:1 – LIMITED NEW) OR (Q45:1-3 – PLAN TO LIMIT OR STOP EXISTING OR NEW)
 Please write down in the space below the two or three biggest reasons why you (IF Q43:2 – are currently not accepting new Medicare patients / IF Q44:1 – have limited the number of Medicare patients in your practice in the past / IF Q45:1-3 – are planning to limit or stop accepting new Medicare patients in your practice)?
-!FIELD
-02 AND Q3:1-3 – NOT ACCEPTING NEW CURRENTLY & PRACTICES IN SOLO/SMALL, SINGLE SPECIALTY GROUP, OR MULTI-SPECIALTY GROUP SETTING) OR (Q44:1 – LIMITED NEW) OR (Q45:1-3 – PLAN TO LIMIT OR STOP EXISTING OR NEW)
-02 – are currently not accepting new Medicare patients / IF Q44:1 – have limited the number of Medicare patients in your practice in the past / IF Q45:1-3 – are planning to limit or stop accepting new Medicare patients in your practice)?
-}
 
-{Q110:
 INSERT TEXTBOX
-!UNKNOWN
-}
 
-{Q111:
+
 (ASK IF Q3:1-3 – PRACTICING PHYSICIANS IN SOLO/SMALL, SINGLE SPECIALTY GROUP, OR MULTI-SPECIALTY GROUP PRACTICES)
 Thinking again about Medicare reimbursement rates for physicians today, which of the following, if any, are you doing or have you had to do in your practice to try to balance the rising cost of practicing medicine with where Medicare reimbursement rates are today? (RANDOMIZE)
-!UNKNOWN
-}
 
-{Q112:
 Maintain a lower inventory of supplies
 Reduce the number of staff 
 Reduce staff hours
@@ -863,23 +516,13 @@ Reduce service offerings
 Reduce practice hours
 Limit the number of or stop accepting Medicare or new Medicare patients
 Move to a concierge medicine or direct primary care membership fee practice model
-!UNKNOWN
-}
 
-{Q113:
 Other (PLEASE SPECIFY)
 Not doing anything/No changes
-!UNKNOWN
-}
 
-{Q114:
 (ASK IF Q3:1-3 – PRACTICING PHYSICIANS IN SOLO/SMALL, SINGLE SPECIALTY GROUP, OR MULTI-SPECIALTY GROUP PRACTICES)
-If Medicare reimbursement rates to physicians were increased, which of the following, if any, would you be likely implement in your practice? Please select all that apply. (RANDOMIZE)
-!MULTI
-03 – PRACTICING PHYSICIANS IN SOLO/SMALL, SINGLE SPECIALTY GROUP, OR MULTI-SPECIALTY GROUP PRACTICES)
-}
+If Medicare reimbursement rates to physicians were increased, which of the following, if any, would you be likely implement in your practice? Please select all that apply. (RANDOMIZE) 
 
-{Q115:
 Increase staff
 Extend office hours
 Offer more comprehensive care coordination/navigation support (including medication adherence)
@@ -887,190 +530,103 @@ Connect patients to social workers, counselors, translators, or other supportive
 Reduce wait times
 Increase service offerings
 Accept more Medicare patients
-!UNKNOWN
-}
 
-{Q116:
 Other (PLEASE SPECIFY)
 Would not implement any of these things or do anything different
-!UNKNOWN
-}
 
-{Q117:
+
+
 (SAMPLE A) Please look below to view a one-pager the AMA has put together about why it is important to put in place an annual inflation update to Medicare's payment rates for physicians. Please read and review the document and answer the questions that follow about it.
-!UNKNOWN
-}
 
-{Q118:
 INSERT AMA HANDOUT 1
-!UNKNOWN
-}
 
-{Q119:
 How convincing did you find this handout as a reason to put in place an annual inflation update to Medicare’s payment rates for physicians?
-!UNKNOWN
-}
-
-{Q120:
+	
 Very Convincing
 Somewhat Convincing
 Not Too Convincing
 Not At All Convincing
-!UNKNOWN
-}
 
-{Q121:
 (SAMPLE C)
 What, if anything, would you change about this one-pager, chart, or the information presented? And, what suggestions do you have for information the AMA should include that would make a stronger case for increasing Medicare reimbursement rates for physicians?
-!UNKNOWN
-}
 
-{Q122:
 INSERT TEXT BOX
-!UNKNOWN
-}
 
-{Q123:
 (SAMPLE B) Please look below to view a one-pager the AMA has put together about why it is important to put in place an annual inflation update to Medicare's payment rates for physicians. Please read and review the document and answer the questions that follow about it.
-!UNKNOWN
-}
 
-{Q124:
 INSERT AMA HANDOUT 2
-!UNKNOWN
-}
 
-{Q125:
 How convincing did you find this handout as a reason to put in place an annual inflation update to Medicare’s payment rates for physicians?
-!UNKNOWN
-}
-
-{Q126:
+	
 Very Convincing
 Somewhat Convincing
 Not Too Convincing
 Not At All Convincing
-!UNKNOWN
-}
 
-{Q127:
 (SAMPLE F)
 What, if anything, would you change about this one-pager, chart, or the information presented? And, what suggestions do you have for information the AMA should include that would make a stronger case for increasing Medicare reimbursement rates for physicians?
-!UNKNOWN
-}
 
-{Q128:
 INSERT TEXT BOX
-!UNKNOWN
-}
 
-{Q129:
-Thinking some more about you… (SAME SCREEN AS NEXT QUESTION)
-!FIELD
-Thinking some more about you… (SAME SCREEN AS NEXT QUESTION)
-}
 
-{Q130:
+
+Thinking some more about you… (SAME SCREEN AS NEXT QUESTION)
+
 Some physicians are members of different medical societies or associations, while other physicians are not. Which, if any, of the following medical societies or associations do you CURRENTLY belong and, if applicable, pay dues annually? (ACCEPT MULTIPLE RESPONSES PUNCHES 1-4) (DO NOT RANDOMIZE)
-!UNKNOWN
-}
-
-{Q131:
-1	American Medical Association 
-	2	Your State/County Medical Society or Association
-	3	Your Specialty Society or Association 
-	4	Another Medical Society or Association
-!FIELD
-01 American Medical Association 
-02 Your State/County Medical Society or Association
-03 Your Specialty Society or Association 
-04 Another Medical Society or Association
-}
-
-{Q132:
+1	American Medical Association
+2	Your State/County Medical Society or Association
+3	Your Specialty Society or Association
+4	Another Medical Society or Association
 5	Do not belong to any medical societies or associations
-!FIELD
-05 Do not belong to any medical societies or associations
-}
 
-{Q133:
+
 And, how likely would you say you are to vote in the November 2024 election for president, Congress, and other offices? (ROTATE TOP TO BOTTOM, BOTTOM TO TOP)
-!FIELD
-2024 election for president, Congress, and other offices? (ROTATE TOP TO BOTTOM, BOTTOM TO TOP)
-}
 
-{Q134:
 Very Likely
 Somewhat Likely
 Not Very Likely       
 Not At All Likely
 Not Eligible to Vote
-!UNKNOWN
-}
 
-{Q135:
 Moving on… (SAME SCREEN AS NEXT QUESTION)
-!FIELD
-Moving on… (SAME SCREEN AS NEXT QUESTION)
-}
 
-{Q136:
 How would you describe the area in which your practice is located?  Would you say it is...(DO NOT RANDOMIZE)
-!UNKNOWN
-}
 
-{Q137:
 1	In a city or urban area
-	2	In a suburban area
-	3	In a rural area
+2	In a suburban area
+3	In a rural area
+
+(IF QA:1-2)
+Thinking some more about your patients…do you offer telehealth appointments to patients? 
+
+Yes
+No
 !FIELD
+01 2 3 4 5
+01 2
+01 2 3
+01 American Medical Association
+02 Your State/County Medical Society or Association
+03 Your Specialty Society or Association
+04 Another Medical Society or Association
+05 Do not belong to any medical societies or associations
 01 In a city or urban area
 02 In a suburban area
 03 In a rural area
 }
 
-{Q138:
-(IF QA:1-2)
-Thinking some more about your patients…do you offer telehealth appointments to patients?
-!UNKNOWN
-}
-
-{Q139:
-Yes
-No
-!UNKNOWN
-}
-
-{Q140:
+{Q4:
 D4.	In politics today, do you consider yourself to be a... (ROTATE :1-3 TOP TO BOTTOM/BOTTOM TO TOP)
-!FIELD
-03 TOP TO BOTTOM/BOTTOM TO TOP)
-}
-
-{Q141:
 1	Republican
-	2	Something else/Independent
-	3	Democrat
-!FIELD
-01 Republican
-02 Something else/Independent
-03 Democrat
-}
-
-{Q142:
+2	Something else/Independent
+3	Democrat
 4	Not sure
-	5	Decline to answer
-!FIELD
-04 Not sure
-05 Decline to answer 
-}
+5	Decline to answer 
 
-{Q143:
+
 STATE MEDICAL ASSOCIATIONS TO INSERT
-!UNKNOWN
-}
 
-{Q144:
+
 AK	Alaska State Medical Association
 AL	Medical Association of the State of Alabama
 AR	Arkansas Medical Society
@@ -1122,11 +678,11 @@ WA	Washington State Medical Association
 WI	Wisconsin Medical Society
 WV	West Virginia State Medical Association
 WY	Wyoming Medical Society
-!UNKNOWN
-}
-
-{Q145:
-
-!UNKNOWN
+!FIELD
+01 Republican
+02 Something else/Independent
+03 Democrat
+04 Not sure
+05 Decline to answer
 }
 
