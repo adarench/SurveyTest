@@ -6,7 +6,7 @@ from docx import Document
 from openai import OpenAI
 from concurrent.futures import ProcessPoolExecutor
 
-client = OpenAI(api_key='sk-proj-2rbgPrswTlqiyVVaDAMHT3BlbkFJ8HXX5Wx9nAHSdcZpZsTC')
+client = OpenAI(api_key='')
 
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'docx'}
