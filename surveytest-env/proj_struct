@@ -1,0 +1,12 @@
+surveytest-env/
+├── bin/
+├── include/
+├── lib/
+├── pyvenv.cfg
+├── main.py
+├── templates/
+│   └── upload.html
+├── uploads/  # This will be created by the script
+├── p0261.final.docx
+├── p0345.final.docx
+├── 240148 CMI Florida and Texas Republican Voters Survey - Draft 4a (programming).docx

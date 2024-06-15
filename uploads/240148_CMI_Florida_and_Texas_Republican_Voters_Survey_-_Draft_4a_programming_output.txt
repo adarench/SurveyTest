@@ -1,0 +1,198 @@
+{Q1:
+CMI Florida & Texas Republican Voters
+Draft 4a
+N=250 Republicans per state / N=500 Republicans total
+
+Welcome!
+
+Thank you for participating in this survey. There are no wrong answers – just your opinions and we want to hear them!
+
+We have tested the survey and found that, on average, it takes about 15 minutes to complete.
+
+Please know that your responses will be kept strictly confidential and no material that identifies your response will be distributed. This survey is NOT for marketing purposes. We are not attempting to sell anything, nor will your participation result in any e-mails in the future to sell you anything.
+
+To start, please answer a few questions about yourself, just to be sure we have a representative sample.
+!UNKNOWN
+}
+
+{Q2:
+In which state do you currently live?
+(ALPHABETIZED DROP DOWN LIST OF 50 STATES + THE DISTRICT OF COLUMBIA)
+Punch for Not Sure (THANK AND TERMINATE)
+ALLOW FLORIDA & TEXAS TO CONTINUE. TERMINATE OTHERS.
+!DROPDOWN
+01 Option 1
+02 Option 2
+03 Option 3
+}
+
+{Q3:
+And, in which county do you currently live? (Drop box of counties in alphabetical order)
+!DROPDOWN
+}
+
+{Q4:
+Please record your age.
+!NUMERIC,,,0,120,77
+}
+
+{Q5:
+Please record your gender.
+!FIELD
+01 Male
+02 Female
+03 Identify in some other way
+}
+
+{Q5:
+Are you registered to vote?
+!FIELD
+01 Yes
+02 No (THANK AND TERMINATE)
+03 Not Sure (THANK AND TERMINATE)
+}
+
+{Q4A:
+In politics today, do you consider yourself a ...
+!FIELD
+01 Strong Republican
+02 Not-so-strong Republican
+03 Lean towards the Republicans
+04 Something else/Independent (TERMINATE)
+05 Lean towards the Democrats (TERMINATE)
+06 Not-so-strong Democrat (TERMINATE)
+07 Strong Democrat (TERMINATE)
+}
+
+{Q4B:
+SCREEN 1: Are you registered to vote as a... 
+
+SCREEN 2:
+(IF REPUBLICAN, ASK) Would you call yourself a STRONG REPUBLICAN or a NOT-SO-STRONG REPUBLICAN?
+(IF SOMETHING ELSE, ASK) Do you think of yourself as closer to the Republican party or to the Democratic party?
+!FIELD
+01 Strong Republican
+02 Not-so-strong Republican
+03 Lean towards the Republicans (TERMINATE)
+04 Something else/Independent (TERMINATE)
+05 Lean towards the Democrats (TERMINATE)
+06 Not-so-strong Democrat (TERMINATE)
+07 Strong Democrat (TERMINATE)
+}
+
+{Q5E:
+Generally speaking, do you consider yourself to be conservative, moderate, or liberal on most issues?
+!FIELD
+01 Very Conservative
+02 Somewhat Conservative
+03 Moderate
+04 Somewhat Liberal
+05 Very Liberal
+}
+
+{Q3A:
+What is the last grade you completed in school?
+!FIELD
+01 Some Grade School (Grades 1-8)
+02 Some High School (Grades 9-11)
+03 Graduated High School (Grade 12)
+04 Technical/Vocational School
+05 Some College
+06 Graduated College (e.g. Bachelor of Arts, Bachelor of Science)
+07 Graduate/Professional School (e.g. PhD, MD, JD)
+}
+
+{Q6A:
+What is your main racial or ethnic heritage? Is it...
+!FIELD
+01 Caucasian or White
+02 African American or Black
+03 Hispanic, Latino or some other Spanish speaking background
+04 Asian or Pacific Islander
+08 Native American or American Indian
+05 Other Ethnicity or Mixed Ethnicity (Please specify)
+}
+
+{Q6:
+P2. Thinking about past primary elections for President, Governor, U.S. Senate, U.S. Congress, and other state and local offices, do you... (ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
+!FIELD
+01 Always vote in primary elections
+02 Vote most of the time
+03 Occasionally vote in primary elections
+04 Never vote in primary elections
+}
+
+{Q9B:
+For statistical purposes only, what is your total annual household income?
+!DROPDOWN
+01 Less than $40,000
+02 $40,000 - $74,999
+03 $75,000 - $99,999
+04 $100,000 - $149,999
+05 $150,000 or more
+}
+
+{Q11A:
+And how often would you say that you attend religious services, either in person or online... (ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
+!FIELD
+01 More than once a week
+02 Weekly
+03 Almost every week
+04 Once or twice a month
+05 A few times a year
+06 Never
+}
+
+{Q16A:
+Do you have children at home under the age of 18 you are responsible for raising who are not yet in college or the workforce?
+!FIELD
+01 Yes
+02 No
+}
+
+{Q7:
+D14. How would you describe the area in which you live? (ROTATE TOP-TO-BOTTOM, BOTTOM-TO-TOP)
+!FIELD
+01 Big city
+02 Medium or small city
+03 Suburb
+04 Small town
+05 Rural area
+}
+
+{OE1:
+Now, the following are some community and political activities that some people have done and others have not. How about you? Have you done any of the following AT LEAST ONCE in the past two years? Please select all that apply. (RANDOMIZE :1-8)
+Boycotted a product or company
+Signed a petition either in person or online taking a position on an issue in the news
+Contributed money, volunteered with or worked for a political party, a candidate, or an organization that works for a cause that you support
+Participated with a community organization, a club, a not-for-profit association or a social group
+Used social media sites like Facebook and Twitter to “like” or follow an issue oriented group, a political organization, or a political candidate or to share news and information about political issues
+Written a letter, emailed or called your Member of Congress or any other local, state, or national public official to express your views
+Regularly read the editorial page of a major newspaper such as the Washington Post, the Wall Street Journal, the New York Times, USA Today or the Los Angeles Times
+Visited the moon (TERMINATE IF SELECTED)
+None of the above
+!FIELD
+01 Boycotted a product or company
+02 Signed a petition either in person or online taking a position on an issue in the news
+03 Contributed money, volunteered with or worked for a political party, a candidate, or an organization that works for a cause that you support
+04 Participated with a community organization, a club, a not-for-profit association or a social group
+05 Used social media sites like Facebook and Twitter to “like” or follow an issue oriented group, a political organization, or a political candidate or to share news and information about political issues
+06 Written a letter, emailed or called your Member of Congress or any other local, state, or national public official to express your views
+07 Regularly read the editorial page of a major newspaper such as the Washington Post, the Wall Street Journal, the New York Times, USA Today or the Los Angeles Times
+08 Visited the moon
+09 None of the above
+}
+
+{Q8:
+What is your zip code?
+!VERBATIM
+}
+
+{Q9:
+For quality control purposes, please re-enter the county where you currently live.
+!DROPDOWN
+01 Option 1
+02 Option 2
+03 Option 3
+}
+

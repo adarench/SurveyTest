@@ -1,0 +1,260 @@
+{Q1:
+TNC Conservation Easements National Survey Qux Draft 6e N=1000 Voters + 400 Regional OS New Bridge Strategy/FM3
+
+Thank you for participating in this survey. Your input is extremely valuable. Please know that your responses will be kept strictly confidential and no material that identifies your response will be distributed. This survey is NOT for marketing purposes. We are not attempting to sell anything, nor will your participation result in any emails in the future to sell you anything.
+
+Before we begin, please answer just a few questions about yourself to be sure we have a representative sample.
+!UNKNOWN
+}
+
+{Q2:
+In which state are you registered to vote? If you are not registered to vote, please click that instead.
+(TERMINATE IF NOT REGISTERED TO VOTE)
+USE FIPS CODES
+52    Not registered to vote (TERMINATE)
+
+(ASKED OF TX VOTERS ONLY)
+!FIELD
+52 Not registered to vote (TERMINATE)
+}
+
+{Q3:
+In which county are you registered to vote? (INCLUDE LIST WITH FIPS CODES, INCLUDING ONE FOR “NOT REGISTERED TO VOTE IN TEXAS” WHICH WILL TERMINATE)
+!VERBATIM
+}
+
+{Q4:
+Do you commit to thoughtfully providing your best answers to each question in this survey?
+!FIELD
+01 Yes
+02 No (thank and term)
+}
+
+{Q5:
+In what year were you born?
+!NUMERIC,,,1900,2021,7777
+}
+
+{Q6:
+Please record your gender
+!FIELD
+01 Male
+02 Female
+03 Something else
+}
+
+{Q7:
+How would you describe the area where you currently live? (ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
+!FIELD
+01 A city
+02 A suburban area
+03 A small town
+04 A rural area
+}
+
+{Q8:
+What is your ethnic or racial heritage?  (PHONE: READ CHOICES)
+!FIELD
+01 African American or Black
+02 White
+03 Hispanic American or Latino
+04 Asian American or Pacific Islander
+05 Middle Eastern
+06 Indigenous or Native American
+07 Other
+08 Combination
+09 !UNKNOWN
+}
+
+{Q9:
+B.	For quality control, please select which item in this list does not belong. (RANDOMIZE)
+!FIELD
+01 Red (THANK AND TERMINATE)
+02 Green (THANK AND TERMINATE)
+03 Purple (THANK AND TERMINATE)
+04 Tuesday
+05 Yellow (THANK AND TERMINATE)
+}
+
+{Q10:
+Getting started…
+
+Generally speaking, do you feel your local community (ROTATE) is growing and developing too fast, is growing and developing too slowly, or is your community growing and developing at about the right pace?
+!FIELD
+01 Too Fast
+02 Too Slowly
+03 About Right
+}
+
+{Q11:
+Which statement best represents how you feel about protecting land, water and wildlife habitat in your state: (ROTATE PUNCHES 1-3 TOP TO BOTTOM, BOTTOM TO TOP)
+!FIELD
+01 We need to protect a lot more 
+02 We have made progress, but some more needs to be done 
+03 We have done enough, and there is no need to protect more 
+}
+
+{Q12:
+Thinking some more about land, water, and wildlife habitat in your state – 
+One way to conserve working farms, ranches, water, and wildlife habitat is through voluntary conservation land agreements with willing, private landowners. In exchange for a payment or a tax incentive, landowners agree not to develop their land or to sell it for development so that the land remains as farms, wildlife habitat or natural areas. Landowners can continue to farm, ranch or use their land, and can sell the land or pass it on to their children or grandchildren.  
+These agreements are sometimes referred to as conservation easements. Prior to this survey, have you seen, read or heard of a conservation easement before?
+!DROPDOWN
+- Yes, a lot
+- Yes, a little 
+- No, not heard of
+
+And do you support or oppose continuing to allow private landowners the ability to conserve their lands as working farms, ranches, natural areas and wildlife habitat in your state through these voluntary land conservation agreements?
+!FIELD
+01 Strongly Support
+02 Somewhat Support
+03 Somewhat Oppose
+04 Strongly Oppose
+}
+
+{Q13:
+Thinking some more about these agreements – The following are some things that people might say about this approach to conserving land in your state. Please indicate whether each description makes you much more likely, somewhat more likely, somewhat less likely, or much less likely to support.  (SHOW FIRST TWO IN ORDER, THEN RANDOMIZE REMAINDER)
+!FIELD
+01 MUCH MORE LIKELY
+02 SOMEWHAT MORE LIKELY
+03 SOMEWHAT LESS LIKELY
+04 MUCH LESS LIKELY
+
+- SAMPLE A: Is a voluntary agreement between a private landowner and state or local government or non-profit land trusts
+- SAMPLE B: Is a voluntary agreement between a private landowner and state or local government 
+}
+
+{Q14:
+As noted earlier there’s a number of different ways to refer to this approach to conserving natural areas, wildlife habitat and working farms or ranches. From the following list of proposed names, please rate each name on an imaginary thermometer from zero degrees to one hundred degrees, where zero means you have a very cold/unfavorable reaction and 100 means you have a very warm/favorable reaction, with fifty being neither cold nor warm.  Remember, you can use any number between zero to one hundred depending on how cold or warm you feel about each different name. (RANDOMIZE)
+!NUMERIC,,,0,100,refused_code
+}
+
+{Q15:
+Some elected officials have raised concerns that these land conservation agreements can limit the economic and productive use of lands, which could hurt the economy and limit tax revenues for counties. Therefore, they have proposed a number of ways to limit landowners’ rights to enter into voluntary land conservation agreements. For each one of these, please indicate if that sounds like something you would support or oppose in your state. (RANDOMIZE)
+!FIELD
+01 STRONGLY SUPPORT
+02 SOMEWHAT SUPPORT
+03 SOMEWHAT OPPOSE
+04 STRONGLY OPPOSE
+}
+
+{Q16:
+The following are some statements that people who support maintaining landowners’ ability to enter into voluntary land conservation agreements. For each one, please indicate if it is a very convincing, somewhat convincing, not very convincing, or not at all convincing reason to support maintaining land conservation agreements. (RANDOMIZE) 
+!FIELD
+02 3 4
+
+- Developers take advantage of small farm and ranch families by buying up their land, forever changing the rural character of our communities. These voluntary land conservation agreements are a critical tool to defend our communities from these attacks. 
+- Families should be able to decide how they will use their land now and for future generations through voluntary land conservation agreements, without being told what to do by the government.
+}
+
+{Q17:
+Land conservation agreements help protect vital wildlife habitat and migration routes that are increasingly threatened by growth and development. Having healthy, abundant wildlife not only contributes to our quality of life, but is often an economic engine for rural areas that rely on people coming to fish, hunt, or view wildlife. 
+!FIELD
+02 3 4
+}
+
+{Q18:
+Having read some more, please indicate now – do you support or oppose continuing to allow private landowners the ability to conserve their lands as working farms, ranches, natural areas and wildlife habitat in your state through these voluntary land conservation agreements?
+!FIELD
+01 Strongly Support
+02 Somewhat Support
+03 Somewhat Oppose
+04 Strongly Oppose
+}
+
+{Q19:
+The following are some statements that those who want to limit landowners’ ability to enter into voluntary land conservation agreements. For each one, please indicate if it is a very convincing, somewhat convincing, not very convincing, or not at all convincing reason to oppose land conservation agreements. (RANDOMIZE) 
+!FIELD
+01 2 3 4
+
+- These agreements are just a backhanded way for environmental organizations to seize control of private property. These groups help landowners broker deals with the government, then turn around and become the "managers" of how the land is used, telling landowners what they can and can’t do with their own land. 
+- Government is mostly benefiting the wealthy out of state who use these agreements as a tool to avoid paying their fair share of taxes. They come at the expense of millions of hard-working taxpayers at a time when many are struggling to pay the bills each month.
+}
+
+{Q20:
+Having read some more, please indicate now – do you support or oppose continuing to allow private landowners the ability to conserve their lands as working farms, ranches, natural areas and wildlife habitat in your state through these voluntary land conservation agreements?
+!FIELD
+01 Strongly Support
+02 Somewhat Support
+03 Somewhat Oppose
+04 Strongly Oppose
+}
+
+{Q21:
+Thinking about you for a moment –
+!FIELD
+01 Red (THANK AND TERMINATE)
+02 Green (THANK AND TERMINATE)
+03 Purple (THANK AND TERMINATE)
+04 Tuesday
+05 Yellow (THANK AND TERMINATE)
+01 Too Fast
+02 Too Slowly
+03 About Right
+01 2 3 4
+01 2 3 4
+02 3 4
+01 2 3 4
+}
+
+{Q10:
+Do you consider yourself a hunter, an angler or both?
+!FIELD
+01 HUNTER ONLY
+02 ANGLER ONLY
+03 BOTH
+04 NO/NEITHER
+05 UNKNOWN
+}
+
+{Q11:
+D6. And do you currently or have you ever lived on a farm?
+!FIELD
+01 Yes/currently
+02 Yes at some time in the past
+03 No/never
+}
+
+{Q12:
+And what was the last level of education you completed? (DO NOT READ CATEGORIES)
+!FIELD
+01 Graduated High School or Less
+02 Technical or Vocational School
+03 Some College
+04 Graduated College
+05 Graduate/Professional School
+}
+
+{Q13:
+D8.    And, in politics today do you consider yourself... (ROTATE)
+
+a Republican,
+a Democrat,
+an Independent
+or something else?
+
+(ON NEW PAGE IF REPUBLICAN OR DEMOCRAT, ASK:)  Would you call yourself a STRONG (Republican/Democrat) or a NOT-SO-STRONG (Republican/Democrat)?
+
+(ON NEW PAGE IF INDEPENDENT/SOMETHING ELSE, ASK:)  Do you think of yourself as closer to the ...(ROTATE)
+
+the Republican party
+...or...
+the Democratic party?
+
+!FIELD
+01 STRONG REPUBLICAN
+02 NOT-SO-STRONG REPUBLICAN
+03 LEAN REPUBLICAN
+04 SOMETHING ELSE/INDEPENDENT
+05 LEAN DEMOCRAT
+06 NOT-SO-STRONG DEMOCRAT
+07 STRONG DEMOCRAT
+}
+
+{Q14:
+Do you consider yourself to be conservative, moderate, or liberal on most issues?
+!FIELD
+01 CONSERVATIVE
+02 MODERATE
+03 LIBERAL
+}
+
