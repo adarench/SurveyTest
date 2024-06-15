@@ -17,27 +17,79 @@ To start, please answer a few questions about yourself, just to be sure we have 
 
 {Q2:
 In which state do you currently live?
-(ALPHABETIZED DROP DOWN LIST OF 50 STATES + THE DISTRICT OF COLUMBIA)
+(ALPHABETIZED DROP-DOWN LIST OF 50 STATES + THE DISTRICT OF COLUMBIA)
 Punch for Not Sure (THANK AND TERMINATE)
 ALLOW FLORIDA & TEXAS TO CONTINUE. TERMINATE OTHERS.
 !DROPDOWN
-01 Option 1
-02 Option 2
-03 Option 3
+01 ALABAMA
+02 ALASKA
+03 ARIZONA
+04 ARKANSAS
+05 CALIFORNIA
+06 COLORADO
+07 CONNECTICUT
+08 DELAWARE
+09 DISTRICT OF COLUMBIA
+10 FLORIDA
+11 GEORGIA
+12 HAWAII
+13 IDAHO
+14 ILLINOIS
+15 INDIANA
+16 IOWA
+17 KANSAS
+18 KENTUCKY
+19 LOUISIANA
+20 MAINE
+21 MARYLAND
+22 MASSACHUSETTS
+23 MICHIGAN
+24 MINNESOTA
+25 MISSISSIPPI
+26 MISSOURI
+27 MONTANA
+28 NEBRASKA
+29 NEVADA
+30 NEW HAMPSHIRE
+31 NEW JERSEY
+32 NEW MEXICO
+33 NEW YORK
+34 NORTH CAROLINA
+35 NORTH DAKOTA
+36 OHIO
+37 OKLAHOMA
+38 OREGON
+39 PENNSYLVANIA
+40 RHODE ISLAND
+41 SOUTH CAROLINA
+42 SOUTH DAKOTA
+43 TENNESSEE
+44 TEXAS
+45 UTAH
+46 VERMONT
+47 VIRGINIA
+48 WASHINGTON
+49 WEST VIRGINIA
+50 WISCONSIN
+51 WYOMING
 }
 
 {Q3:
-And, in which county do you currently live? (Drop box of counties in alphabetical order)
+B. And, in which county do you currently live? (Drop box of counties in alphabetical order)
+
 !DROPDOWN
+- COUNTY A
+- COUNTY B
+- COUNTY C
 }
 
 {Q4:
 Please record your age.
-!NUMERIC,,,0,120,77
+!NUMERIC,,,0,120,99
 }
 
 {Q5:
-Please record your gender.
+Please record your gender
 !FIELD
 01 Male
 02 Female
@@ -48,39 +100,35 @@ Please record your gender.
 Are you registered to vote?
 !FIELD
 01 Yes
-02 No (THANK AND TERMINATE)
-03 Not Sure (THANK AND TERMINATE)
+02 No
+03 Not Sure
 }
 
-{Q4A:
-In politics today, do you consider yourself a ...
+{Q6:
+In politics today, do you consider yourself a...
 !FIELD
 01 Strong Republican
 02 Not-so-strong Republican
 03 Lean towards the Republicans
-04 Something else/Independent (TERMINATE)
-05 Lean towards the Democrats (TERMINATE)
-06 Not-so-strong Democrat (TERMINATE)
-07 Strong Democrat (TERMINATE)
+04 Something else/Independent
+05 Lean towards the Democrats
+06 Not-so-strong Democrat
+07 Strong Democrat
 }
 
-{Q4B:
-SCREEN 1: Are you registered to vote as a... 
-
-SCREEN 2:
-(IF REPUBLICAN, ASK) Would you call yourself a STRONG REPUBLICAN or a NOT-SO-STRONG REPUBLICAN?
-(IF SOMETHING ELSE, ASK) Do you think of yourself as closer to the Republican party or to the Democratic party?
+{Q7:
+In politics today, do you consider yourself a...
 !FIELD
 01 Strong Republican
 02 Not-so-strong Republican
-03 Lean towards the Republicans (TERMINATE)
-04 Something else/Independent (TERMINATE)
-05 Lean towards the Democrats (TERMINATE)
-06 Not-so-strong Democrat (TERMINATE)
-07 Strong Democrat (TERMINATE)
+03 Lean towards the Republicans
+04 Something else/Independent
+05 Lean towards the Democrats
+06 Not-so-strong Democrat
+07 Strong Democrat
 }
 
-{Q5E:
+{Q8:
 Generally speaking, do you consider yourself to be conservative, moderate, or liberal on most issues?
 !FIELD
 01 Very Conservative
@@ -90,9 +138,9 @@ Generally speaking, do you consider yourself to be conservative, moderate, or li
 05 Very Liberal
 }
 
-{Q3A:
+{Q9:
 What is the last grade you completed in school?
-!FIELD
+!FIELD,,,1,7
 01 Some Grade School (Grades 1-8)
 02 Some High School (Grades 9-11)
 03 Graduated High School (Grade 12)
@@ -102,15 +150,191 @@ What is the last grade you completed in school?
 07 Graduate/Professional School (e.g. PhD, MD, JD)
 }
 
-{Q6A:
+{Q10:
 What is your main racial or ethnic heritage? Is it...
 !FIELD
 01 Caucasian or White
 02 African American or Black
 03 Hispanic, Latino or some other Spanish speaking background
 04 Asian or Pacific Islander
-08 Native American or American Indian
 05 Other Ethnicity or Mixed Ethnicity (Please specify)
+}
+
+{Q11:
+To show that you have read this question, please select “none of the above” as the answer to this question.
+!FIELD
+01 CNN
+02 MSNBC
+03 Fox News
+04 ABC, CBS, NBC
+05 OAN, NewsMax, or RSBN
+06 None of the above
+07 Unsure
+}
+
+{Q12:
+Would you say that things in the country are going in the right direction, or have they pretty seriously gotten off on the wrong track?
+!FIELD
+01 Right Direction
+02 Wrong Track
+03 No Opinion
+}
+
+{Q13:
+Would you say that things in the state are going in the right direction, or have they pretty seriously gotten off on the wrong track?
+!FIELD
+01 Right Direction
+02 Wrong Track
+03 No Opinion
+}
+
+{Q14:
+Do you approve or disapprove of the job (Governor) is doing as Governor?
+!FIELD
+01 Strongly Approve
+02 Somewhat Approve
+03 Somewhat Disapprove
+04 Strongly Disapprove
+05 No Opinion
+}
+
+{Q15:
+Do you approve or disapprove of the job the state legislature is doing in (State Capital)?
+!FIELD
+01 Strongly Approve
+02 Somwhat Approve
+03 Somewhat Disapprove
+04 Strongly Disapprove
+05 No Opinion
+}
+
+{Q16:
+Protecting the environment: Rate the importance from 1-10.
+Supporting job creation and economic growth: Rate the importance from 1-10.
+Bringing down costs of everyday goods: Rate the importance from 1-10.
+Balancing the federal budget: Rate the importance from 1-10.
+Improving education: Rate the importance from 1-10.
+Addressing illegal immigration: Rate the importance from 1-10.
+Protecting national security: Rate the importance from 1-10.
+Addressing access to abortion: Rate the importance from 1-10.
+Ensuring access to affordable health care: Rate the importance from 1-10.
+Protecting 2nd Amendment rights: Rate the importance from 1-10.
+Developing global markets for American-made goods: Rate the importance from 1-10.
+Enforcing tariffs for American manufacturing: Rate the importance from 1-10.
+!NUMERIC,,,1,10,99
+}
+
+{Q17:
+Have you seen any live music shows in Shea Stadium in the last 2 years?
+!FIELD
+01 Yes
+02 No
+03 Unsure
+}
+
+{Q18:
+Please indicate if your opinion of aluminum cans is favorable, neutral, or unfavorable.
+!FIELD
+01 Very Favorable
+02 Somewhat Favorable
+03 Neutral
+04 Somewhat Unfavorable
+05 Very Unfavorable
+}
+
+{Q19:
+How likely are you to recycle aluminum cans? Rate from 1-10.
+!NUMERIC,,,1,10,99
+}
+
+{Q20:
+Have you seen, read, or heard anything about aluminum and the aluminum industry in the past two to three months?
+!FIELD
+01 Yes, A Lot
+02 Yes, Some
+03 No
+}
+
+{Q21:
+When considering bottle and can deposit laws, do you strongly favor, somewhat favor, somewhat oppose, or strongly oppose?
+!FIELD
+01 Strongly Favor
+02 Somewhat Favor
+03 Somewhat Oppose
+04 Strongly Oppose
+05 Not Sure/No Opinion
+}
+
+{Q22:
+Do you favor or oppose mandatory government recycling programs or a voluntary approach?
+!FIELD
+01 Mandatory for everyone
+02 Voluntary approach
+03 Neither of these
+}
+
+{Q23:
+Which one of the following is not an animal?
+!FIELD
+01 Dog
+02 Elephant
+03 Horse
+04 Bear
+05 Television
+06 All of these are animals
+}
+
+{Q24:
+Now just a few more questions for statistical purposes only...
+!FIELD
+01 Yes
+02 No
+03 Not Sure
+01 Strong Republican
+02 Not-so-strong Republican
+03 Lean towards the Republicans
+04 Something else/Independent
+05 Lean towards the Democrats
+06 Not-so-strong Democrat
+07 Strong Democrat
+01 Very Conservative
+02 Somewhat Conservative
+03 Moderate
+04 Somewhat Liberal
+05 Very Liberal
+01 Some Grade School (Grades 1-8)
+02 Some High School (Grades 9-11)
+03 Graduated High School (Grade 12)
+04 Technical/Vocational School
+05 Some College
+06 Graduated College (e.g. Bachelor of Arts, Bachelor of Science)
+07 Graduate/Professional School (e.g. PhD, MD, JD)
+01 Caucasian or White
+02 African American or Black
+03 Hispanic, Latino or some other Spanish speaking background
+04 Asian or Pacific Islander
+05 Other Ethnicity or Mixed Ethnicity (Please specify)
+01 Right Direction
+02 Wrong Track
+01 Right Direction
+02 Wrong Track
+01 Strongly Approve
+02 Somewhat Approve
+03 Somewhat Disapprove
+04 Strongly Disapprove
+05 No Opinion
+01 Strongly Approve
+02 Somewhat Approve
+03 Somewhat Disapprove
+04 Strongly Disapprove
+05 No Opinion
+01 2 3 4 5
+01 Very confident
+02 Somewhat confident
+03 Not too confident
+04 Not at all confident
+01 2 3 4
+01 2 3 4
 }
 
 {Q6:
@@ -122,8 +346,8 @@ P2. Thinking about past primary elections for President, Governor, U.S. Senate, 
 04 Never vote in primary elections
 }
 
-{Q9B:
-For statistical purposes only, what is your total annual household income?
+{Q7:
+D9B. For statistical purposes only, what is your total annual household income?
 !DROPDOWN
 01 Less than $40,000
 02 $40,000 - $74,999
@@ -132,8 +356,8 @@ For statistical purposes only, what is your total annual household income?
 05 $150,000 or more
 }
 
-{Q11A:
-And how often would you say that you attend religious services, either in person or online... (ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
+{Q8:
+D11A. And how often would you say that you attend religious services, either in person or online... (ROTATE TOP TO BOTTOM/BOTTOM TO TOP)
 !FIELD
 01 More than once a week
 02 Weekly
@@ -143,15 +367,17 @@ And how often would you say that you attend religious services, either in person
 06 Never
 }
 
-{Q16A:
-Do you have children at home under the age of 18 you are responsible for raising who are not yet in college or the workforce?
+{Q9:
+(SHOW ON SAME PAGE AS D16A) Thinking some more about you…
+
+D16A. Do you have children at home under the age of 18 you are responsible for raising who are not yet in college or the workforce?
 !FIELD
 01 Yes
 02 No
 }
 
 {Q7:
-D14. How would you describe the area in which you live? (ROTATE TOP-TO-BOTTOM, BOTTOM-TO-TOP)
+How would you describe the area in which you live? (ROTATE TOP-TO-BOTTOM, BOTTOM-TO-TOP)
 !FIELD
 01 Big city
 02 Medium or small city
@@ -171,25 +397,16 @@ Written a letter, emailed or called your Member of Congress or any other local, 
 Regularly read the editorial page of a major newspaper such as the Washington Post, the Wall Street Journal, the New York Times, USA Today or the Los Angeles Times
 Visited the moon (TERMINATE IF SELECTED)
 None of the above
-!FIELD
-01 Boycotted a product or company
-02 Signed a petition either in person or online taking a position on an issue in the news
-03 Contributed money, volunteered with or worked for a political party, a candidate, or an organization that works for a cause that you support
-04 Participated with a community organization, a club, a not-for-profit association or a social group
-05 Used social media sites like Facebook and Twitter to “like” or follow an issue oriented group, a political organization, or a political candidate or to share news and information about political issues
-06 Written a letter, emailed or called your Member of Congress or any other local, state, or national public official to express your views
-07 Regularly read the editorial page of a major newspaper such as the Washington Post, the Wall Street Journal, the New York Times, USA Today or the Los Angeles Times
-08 Visited the moon
-09 None of the above
+!VERBATIM
 }
 
 {Q8:
-What is your zip code?
+Z. What is your zip code?
 !VERBATIM
 }
 
 {Q9:
-For quality control purposes, please re-enter the county where you currently live.
+QUAL5. Finally, for quality control purposes, please re-enter the county where you currently live.
 !DROPDOWN
 01 Option 1
 02 Option 2

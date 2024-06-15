@@ -6,7 +6,7 @@ from docx import Document
 from openai import OpenAI
 from concurrent.futures import ProcessPoolExecutor
 
-client = OpenAI(api_key='')
+client = OpenAI(api_key='sk-proj-2rbgPrswTlqiyVVaDAMHT3BlbkFJ8HXX5Wx9nAHSdcZpZsTC')
 
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'docx'}
@@ -23,22 +23,30 @@ def read_docx_file(file_path):
     return '\n'.join(full_text)
 
 def process_file(file_path):
-    content = read_docx_file(file_path)
-    # Your existing processing logic
-    questions = split_questions(content)
-    questions = merge_related_content(questions)
-    markup_list = [generate_markup(question, f"Q{i+1}") for i, question in enumerate(questions)]
-    refined_markup = call_openai_api(markup_list)
-    output_file_path = f"{os.path.splitext(file_path)[0]}_output.txt"
-    with open(output_file_path, 'w', encoding='utf-8') as file:
-        for markup in refined_markup:
-            file.write(markup + "\n\n")
-    return output_file_path
+    try:
+        content = read_docx_file(file_path)
+        questions = split_questions(content)
+        questions = merge_related_content(questions)
+        markup_list = [generate_markup(question, f"Q{i+1}") for i, question in enumerate(questions)]
+        refined_markup = call_openai_api(markup_list)
+        output_filename = f"{os.path.splitext(os.path.basename(file_path))[0]}_output.txt"
+        output_file_path = os.path.join(app.config['UPLOAD_FOLDER'], output_filename)
+        with open(output_file_path, 'w', encoding='utf-8') as file:
+            for markup in refined_markup:
+                file.write(markup + "\n\n")
+        return output_filename
+    except Exception as e:
+        print(f"Error processing file {file_path}: {e}")
+        raise
 
 def process_files(file_paths):
-    with ProcessPoolExecutor() as executor:
-        results = list(executor.map(process_file, file_paths))
-    return results
+    try:
+        with ProcessPoolExecutor() as executor:
+            results = list(executor.map(process_file, file_paths))
+        return results
+    except Exception as e:
+        print(f"Error processing files: {e}")
+        raise
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_files():
@@ -56,8 +64,11 @@ def upload_files():
                 file_paths.append(file_path)
 
         if file_paths:
-            output_files = process_files(file_paths)
-            return render_template('upload.html', files=output_files)
+            try:
+                output_files = process_files(file_paths)
+                return render_template('upload.html', files=output_files)
+            except Exception as e:
+                return f"An error occurred while processing the files: {e}"
 
     return render_template('upload.html')
 
@@ -90,9 +101,6 @@ def merge_related_content(questions):
     return merged_questions
 
 def parse_question(question_text):
-    """
-    Parse the question text and determine the schema type.
-    """
     single_choice_pattern = re.compile(r"^\d+\s+.*$", re.MULTILINE)
     numeric_pattern = re.compile(r"\d{4}\s.*?\d{4}", re.MULTILINE)
     open_ended_pattern = re.compile(r"Please describe.*|RECORD RESPONSE VERBATIM", re.MULTILINE)
@@ -123,12 +131,8 @@ def parse_question(question_text):
         return "unknown"
 
 def extract_options(question_text):
-    """
-    Extract options from the question text.
-    """
     options = re.findall(r"^\d+\s+.*$", question_text, re.MULTILINE)
     return "\n".join([f"{int(opt.split()[0]):02d} {' '.join(opt.split()[1:])}" for opt in options])
-
 
 def generate_markup(question_text, question_label):
     question_type = parse_question(question_text)
